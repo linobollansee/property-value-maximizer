@@ -14,7 +14,7 @@ def load_model():
     return joblib.load(f"{file_path}/regression_pipeline.pkl")
 
 
-def sales_price_prediction_page():
+def sales_price_prediction_body():
     """
     Streamlit page to predict sales price of inherited houses and random
     houses based on user input.

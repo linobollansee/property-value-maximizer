@@ -9,7 +9,7 @@ from feature_engine.discretisation import ArbitraryDiscretiser
 from src.data_management import load_ames_data
 
 
-def correlation_analysis_page():
+def correlation_analysis_body():
     df = load_ames_data()
     vars_to_study = ["1stFlrSF", "GarageArea", "GarageYrBlt", "GrLivArea",
                      "KitchenQual_Ex", "KitchenQual_TA", "OverallQual",

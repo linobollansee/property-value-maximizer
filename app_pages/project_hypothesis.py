@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-def project_hypothesis_page_body():
+def project_hypothesis_body():
     st.write("## Project Hypotheses and Validation")
 
     st.success(

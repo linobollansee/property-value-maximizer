@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-def summary_page_body():
+def page_summary_body():
     """
     Displays contents of the project summary page.
     """
@@ -47,7 +47,3 @@ def summary_page_body():
         "[README file](https://github.com/linobollansee/"
         "property-value-maximizer/blob/main/README.md)."
     )
-
-
-# Call the function to display the content on the Streamlit page
-summary_page_body()

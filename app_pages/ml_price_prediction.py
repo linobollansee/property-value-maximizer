@@ -19,7 +19,7 @@ def load_pkl_file(file_path):
         return None
 
 
-def ml_price_prediction_page():
+def ml_price_prediction_body():
     """
     Displays ML pipeline, feature importance, and regression performance plots
     """
