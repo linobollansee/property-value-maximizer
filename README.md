@@ -70,50 +70,64 @@ To meet these business requirements, Epics and User Stories have been defined. T
 - **Data Collection and Information Gathering Epic**
 
   - User Story: As a developer, I need to install all required dependencies and packages so that I can effectively utilize the necessary tools for project implementation.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
+
   - User Story: As a developer, I need to import relevant data into a Jupyter Notebook so that I can conduct a thorough analysis of the dataset.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
 - **Data Visualization, Cleaning, and Preparation Epic**
 
   - User Story: As a developer, I want to implement a robust data cleaning process so that I can ensure the dataset is accurate, reliable, and of high quality.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
 - **Model Training, Optimization, and Validation Epic**
 
   - User Story: As a developer, I want to evaluate the performance of the predictive model so that I can ensure the reliability and accuracy of its predictions.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
   - User Story: As a developer, I want to test individual data points against the model’s predictions so that I can determine the target variable based on my provided features.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
 - **Dashboard Planning, Design, and Development Epic**
 
   - User Story: As a client, I want to access the Streamlit landing page so that I can quickly gain an overview of the project.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
   - User Story: As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
   - User Story: As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
   - User Story: As a client, I want to identify the key attributes of a house that have the strongest correlation with its potential sale price so that I can make data-driven pricing decisions. The sale price prediction should be based on the set of features with the highest predictive power.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
   - User Story: As a client, I want interactive input fields that allow me to enter custom data so that I can generate personalized predictions for the target variable.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
   - User Story: As a client, I want the most accurate possible prediction of the sale prices for the inherited properties so that I can maximize the financial returns from selling the four houses.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
   - User Story: As a developer, I need to create a dashboard to effectively visualize and communicate the results of the model's predictions.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
 
--**Dashboard Deployment and Release Epic**
+- **Dashboard Deployment and Release Epic**
 
   - User Story: As a developer, I want to initiate the deployment process of my application on Render at an early stage so that I can conduct end-to-end manual deployment testing from the outset.
-  Business Requirement Addressed: BR 1 & 2
+  
+    - Business Requirement Addressed: BR 1 & 2
    
   
   
