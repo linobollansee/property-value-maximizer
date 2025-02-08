@@ -10,6 +10,19 @@ from app_pages.ml_price_prediction import ml_price_prediction_body
 # Initialize MultiPage application
 app = MultiPage(app_name="Property-Value-Maximizer")
 
+st.markdown(
+    """
+    <style>
+        /* This applies to the whole Streamlit app container */
+        .stApp {
+            background-image: url("assets/images/background.png");
+            background-repeat: repeat;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Add pages to the application
 app.add_page("👁️ Project Overview", page_summary_body)
 app.add_page("📈 Correlation Analysis", correlation_analysis_body)
