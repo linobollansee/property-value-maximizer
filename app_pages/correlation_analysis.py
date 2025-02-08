@@ -42,15 +42,15 @@ def correlation_analysis_body():
 
     st.info(
         "The correlation analysis and plot interpretations lead to the "
-        "following key conclusions: "
+        "following key conclusions: \n\n"
         "* Larger homes are more valuable: Homes with larger square footage "
         "and additional features show a strong correlation with higher "
         "market values. This was the most prominent finding in the analysis. "
         "Further investigation confirmed that overall quality is the most "
-        "significant factor when determining feature importance. "
+        "significant factor when determining feature importance. \n\n"
         "* Better condition and higher-quality features drive up value: Homes "
         "in better condition and with higher-quality materials tend to be "
-        "more valuable, reinforcing the first hypothesis. "
+        "more valuable, reinforcing the first hypothesis. \n\n"
         "* New or recently renovated homes hold higher value: Homes that are "
         "newly built or have undergone recent renovations typically have a "
         "higher value, confirming the second hypothesis."
