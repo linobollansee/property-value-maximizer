@@ -10,7 +10,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Dataset Content](#dataset-content)
 - [Business Requirements](#business-requirements)
 - [Agile Methodology](#agile-methodology)
-- [Hypotheses and Validation](#hypotheses-and-validation
+- [Hypotheses and Validation](#hypotheses-and-validation)
 
 ## Dataset Content
 
