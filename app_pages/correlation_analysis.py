@@ -60,10 +60,10 @@ def correlation_analysis_body():
     target_var = "SalePrice"
     st.write("#### Interactive Data visualizations")
 
-    if st.checkbox("🎯 Distribution of target variable"):
+    if st.checkbox("⚖️ Distribution of target variable"):
         plot_target_hist(df_eda, target_var)
 
-    if st.checkbox("Show Correlation and PPS Heatmaps"):
+    if st.checkbox("🔥 Show Correlation and PPS Heatmaps"):
         df_corr_pearson, df_corr_spearman, pps_matrix = (
             CalculateCorrAndPPS(df_eda)
         )
