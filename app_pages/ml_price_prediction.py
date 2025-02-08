@@ -23,7 +23,7 @@ def ml_price_prediction_body():
     """
     Displays ML pipeline, feature importance, and regression performance plots
     """
-    version = 'v4'
+    version = 'v1'
     price_pipe = load_pkl_file(
         f"outputs/ml_pipeline/predict_price/{version}/regression_pipeline.pkl"
     )
