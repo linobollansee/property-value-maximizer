@@ -14,7 +14,11 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-ml-tasks)
 - [Business Case Understanding](#business-case-understanding)
 - [Cross-industry standard process for data mining](#cross-industry-standard-process-for-data-mining)
-- [Data Cleaning Pipeline](#data-cleaning-pipeline)
+- [Data Preprocessing](#data-preprocessing)
+  - [Data Cleaning Pipeline](#data-cleaning-pipeline)
+  - [Feature Engineering](#feature-engineering)
+    - [Categorical encoding](#categorical-encoding)
+    - [Numerical Transformations](#numerical-transformations)
 
 ## Dataset Content
 
@@ -222,7 +226,9 @@ This project applies the CRISP-DM (CRoss Industry Standard Process for Data Mini
 | **Evaluation**             | After the model has been built, this phase evaluates its performance based on predefined criteria. The model is assessed to ensure it meets business goals and objectives before it is deployed. |
 | **Deployment**             | The final phase focuses on implementing the data mining solution into the business environment. This includes integrating the model into production systems, delivering results, and monitoring its impact on business processes. |
 
-## Data Cleaning Pipeline
+## Data Preprocessing
+
+### Data Cleaning Pipeline
 
 A data cleaning pipeline was developed to handle missing values. Various imputation methods were applied based on the statistical properties of the variables.
 
@@ -239,3 +245,18 @@ A data cleaning pipeline was developed to handle missing values. Various imputat
   - Features such as `EnclosedPorch`, `GarageYrBlt`, and `WoodDeckSF` contained a substantial proportion of missing values. Rather than imputing them with limited available observations which could introduce bias, these features were removed from the dataset. Their exclusion was justified based on their potential lack of predictive power and the risk of introducing noise into the model.
 
 For imputation rationale, refer to the detailed analysis in the following notebook: <https://github.com/linobollansee/property-value-maximizer/blob/main/jupyter_notebooks/02%20-%20DataCleaning.ipynb>
+
+### Feature Engineering
+
+#### Categorical encoding
+Categorical encoding was applied to convert ordinal categories into numerical values, preserving both the order and hierarchy of the categories. This allowed the regression analysis to account for their relative rankings. However, during the data cleaning process, most ordinal categories were removed.  
+
+#### Numerical Transformations
+
+|**Feature**|**Assessment**|**Applied Transformation**|
+|----|----|----|
+|TotalBsmtSF| Mean imputation proved to be the most effective method for handling missing values.|MeanMedianImputer|
+|GrLivArea| A logarithmic transformation was the best approach to achieve normalization.|LogTransformer|
+|TotalBsmtSF| Power transformation yielded the most effective normalization.|PowerTransformer|
+|TotalBsmtSF, GarageArea| Outliers were best handled using Winsorization with the IQR method.|Winsorizer|
+|TotalBsmtSF, GrLivArea, GarageArea|Standard scaling provided the most effective way to normalize feature ranges.|StandardScaler|
