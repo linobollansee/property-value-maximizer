@@ -210,6 +210,8 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 ## Cross-industry standard process for data mining
 
+This project applies the CRISP-DM (CRoss Industry Standard Process for Data Mining) methodology.
+
 | Phase               | Explanation                                                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------|
 | **Business Understanding** | This phase focuses on understanding the project objectives and requirements from a business perspective. The goal is to define the problem, set objectives, and determine the data mining goals to achieve business success. |
