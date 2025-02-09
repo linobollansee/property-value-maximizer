@@ -12,6 +12,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Agile Methodology](#agile-methodology)
 - [Hypotheses and Validation](#hypotheses-and-validation)
 - [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-ml-tasks)
+- [Business Case Understanding](#business-case-understanding)
 
 ## Dataset Content
 
@@ -159,3 +160,49 @@ To meet these business requirements, Epics and User Stories have been defined. T
   - The goal is to predict house prices using key features: `OverallQual`, `GrLivArea`, `GarageArea`, `YearBuilt`, `TotalBsmtSF`
   - This analysis is detailed in the following notebook: <https://github.com/linobollansee/property-value-maximizer/blob/main/jupyter_notebooks/05%20-%20MLModelEvaluation.ipynb>
   
+## Business Case Understanding
+
+- Client’s Business Requirements
+
+  - The client requires a comprehensive analysis to understand the correlation between various house attributes and their corresponding sale prices. They expect visualizations that clearly display the features most strongly correlated with the sale price, allowing for more informed decision-making.
+
+  - In addition to this, the client has inherited four houses and seeks a predictive model to estimate their sale prices. The client also intends to extend the model to predict sale prices for other properties in Ames, Iowa.
+
+- Traditional Data Analysis Feasibility:
+
+  - The client could use traditional analysis methods to approximate the sale prices of the inherited houses by comparing them with similar properties in the dataset. However, this approach is prone to errors due to its subjective nature and reliance on general assumptions. Such estimates are not precise and may lead to inaccuracies in decision-making.
+
+- Dashboard vs. API:
+
+  - The client specifically requires a dashboard. This dashboard will provide an interactive way to visualize data, explore correlations, and predict sale prices in real-time. An API is not necessary for the client’s use case.
+
+- Success Criteria for the Client:
+
+  - A successful outcome for the client is defined by delivering an in-depth analysis that reveals the key attributes most strongly correlated with house sale prices. This will guide the client in maximizing the sale prices of their inherited properties.
+
+- Ethical and Privacy Considerations:
+
+  - The dataset used for this project is publicly available, eliminating any ethical or privacy concerns associated with its use.
+
+- Agile Implementation: EPICS and User Stories:
+
+  - EPICS have been defined for clear guidance, and user stories are tracked through GitHub issues on a Kanban board, which facilitates agile project management. This ensures effective tracking and smooth collaboration throughout the project lifecycle.
+
+  - The project board can be found here: [GitHub Project Board]
+
+- Given that the task involves predicting a continuous numeric outcome, a regression model is the most appropriate for this scenario. This model will leverage the relationships between house features and sale price to make accurate predictions.
+
+- Project Inputs and Expected Outputs:
+
+  - Inputs: The house attributes derived from the publicly available dataset.
+  - Outputs: The predicted sale price for each house, expressed in USD as a continuous numeric value.
+  - The model will be used to predict the sale price of each of the four inherited houses based on their respective attributes. Additionally, a combined prediction of the total sale price for all four houses will be generated.
+  - A user interacting with the dashboard will be able to input the attributes of any house (excluding the inherited ones) through input widgets and receive an estimated sale price instantly.
+
+- Definition of Success:
+
+  - Success will be achieved if the model achieves an R² score of at least 0.75 on both the training and test datasets. This threshold will indicate that the model is sufficiently accurate and reliable.
+
+- Client Benefits:
+
+  - By utilizing this predictive model, the client will be able to optimize the sale prices for their inherited properties. The model will provide accurate, data-driven price predictions, empowering the client to make informed decisions that maximize the sale value of each house.
