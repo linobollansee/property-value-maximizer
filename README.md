@@ -14,6 +14,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-ml-tasks)
 - [Business Case Understanding](#business-case-understanding)
 - [Cross-industry standard process for data mining](#cross-industry-standard-process-for-data-mining)
+- [Data Cleaning Pipeline](#data-cleaning-pipeline)
 
 ## Dataset Content
 
@@ -220,3 +221,21 @@ This project applies the CRISP-DM (CRoss Industry Standard Process for Data Mini
 | **Modeling**               | In this phase, various data mining techniques (such as classification, regression, clustering, etc.) are applied to the prepared data to create models. It is often an iterative process where models are trained, tested, and refined. |
 | **Evaluation**             | After the model has been built, this phase evaluates its performance based on predefined criteria. The model is assessed to ensure it meets business goals and objectives before it is deployed. |
 | **Deployment**             | The final phase focuses on implementing the data mining solution into the business environment. This includes integrating the model into production systems, delivering results, and monitoring its impact on business processes. |
+
+## Data Cleaning Pipeline
+
+A data cleaning pipeline was developed to handle missing values. Various imputation methods were applied based on the statistical properties of the variables.
+
+- Mean Imputation for Normally Distributed Continuous Variables
+  - For continuous features such as `LotFrontage` and `BedroomAbvGr`, missing values were imputed using the mean. This approach is suitable for variables that follow an approximately normal distribution without significant outliers, as it maintains the overall data distribution without skewing the central tendency.
+
+- Median Imputation for Skewed Continuous Variables
+  - Variables exhibiting right-skewed distributions, such as `2ndFlrSF` and `MasVnrArea`, were imputed using the median. Since the median is less sensitive to extreme values, it provides a more robust imputation strategy for skewed data, preventing artificial distortion of the dataset.
+
+- Categorical Variable Imputation with 'None'
+  - Categorical features like `GarageFinish`, `BsmtFinType1`, and `BsmtExposure` were missing primarily because these attributes did not apply to certain properties (e.g., a house without a basement). To preserve this structural information, missing values were imputed with "None" rather than the mode, ensuring that the absence of a feature is explicitly represented rather than inferred as a common category.
+
+- Feature Removal Due to High Missingness
+  - Features such as `EnclosedPorch`, `GarageYrBlt`, and `WoodDeckSF` contained a substantial proportion of missing values. Rather than imputing them with limited available observations which could introduce bias, these features were removed from the dataset. Their exclusion was justified based on their potential lack of predictive power and the risk of introducing noise into the model.
+
+For imputation rationale, refer to the detailed analysis in the following notebook: <https://github.com/linobollansee/property-value-maximizer/blob/main/jupyter_notebooks/02%20-%20DataCleaning.ipynb>
