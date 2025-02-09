@@ -19,6 +19,16 @@ The project is accessible at the following URL: <https://property-value-maximize
   - [Feature Engineering](#feature-engineering)
     - [Categorical encoding](#categorical-encoding)
     - [Numerical Transformations](#numerical-transformations)
+- [Dashboard Features](#dashboard-features)
+- [Bugs](#bugs)
+- [Project Testing](#project-testing)
+- [Deployment](#deployment)
+- [Python Packages](#python-packages)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Media](#media)
+  - [Content](#content)
+- [Acknowledgements](#acknowledgements)
 
 ## Dataset Content
 
@@ -260,3 +270,23 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 |TotalBsmtSF| Power transformation yielded the most effective normalization.|PowerTransformer|
 |TotalBsmtSF, GarageArea| Outliers were best handled using Winsorization with the IQR method.|Winsorizer|
 |TotalBsmtSF, GrLivArea, GarageArea|Standard scaling provided the most effective way to normalize feature ranges.|StandardScaler|
+
+## Dashboard Features
+
+## Bugs
+
+## Project Testing
+
+## Deployment
+
+## Python Packages
+
+## Credits
+
+### Code
+
+### Media
+
+### Content
+
+## Acknowledgements
