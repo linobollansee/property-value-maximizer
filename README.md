@@ -279,6 +279,19 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ## Deployment
 
+1. Log in to Render.com using Github.
+2. Click on the New button, select Web Service.
+3. At Source Code, select Git Providor. Select your repository name. Click Connect.
+4. Enter a unique name for your web service.
+5. Select the Python3 language.
+6. Select the main branch.
+7. Select the Frankfurt (EU Central) Region.
+8. Set the Build Command: `pip install -r requirements.txt && ./setup.sh`
+9. Set the Start Command: `streamlit run app.py`
+10. Set Instance Type: Free
+11. Set the Environment Variables: `Key: PORT` `Value: 8501` and `Key: PYTHON_VERSION` `Value: 3.12.1`
+12. Click Deploy Web Service
+
 ## Python Packages
 
 - Data Processing & Feature Engineering
