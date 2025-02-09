@@ -13,6 +13,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Hypotheses and Validation](#hypotheses-and-validation)
 - [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-ml-tasks)
 - [Business Case Understanding](#business-case-understanding)
+- [Cross-industry standard process for data mining](#cross-industry-standard-process-for-data-mining)
 
 ## Dataset Content
 
@@ -206,3 +207,14 @@ To meet these business requirements, Epics and User Stories have been defined. T
 - Client Benefits:
 
   - By utilizing this predictive model, the client will be able to optimize the sale prices for their inherited properties. The model will provide accurate, data-driven price predictions, empowering the client to make informed decisions that maximize the sale value of each house.
+
+## Cross-industry standard process for data mining
+
+| Phase               | Explanation                                                                                   |
+|---------------------|-----------------------------------------------------------------------------------------------|
+| **Business Understanding** | This phase focuses on understanding the project objectives and requirements from a business perspective. The goal is to define the problem, set objectives, and determine the data mining goals to achieve business success. |
+| **Data Understanding**     | In this phase, the focus is on collecting initial data and understanding its quality, content, and structure. It involves exploratory data analysis to uncover insights, patterns, and potential issues.  |
+| **Data Preparation**       | This phase involves cleaning and transforming raw data into a suitable format for modeling. It includes tasks like dealing with missing data, outlier detection, and feature engineering. |
+| **Modeling**               | In this phase, various data mining techniques (such as classification, regression, clustering, etc.) are applied to the prepared data to create models. It is often an iterative process where models are trained, tested, and refined. |
+| **Evaluation**             | After the model has been built, this phase evaluates its performance based on predefined criteria. The model is assessed to ensure it meets business goals and objectives before it is deployed. |
+| **Deployment**             | The final phase focuses on implementing the data mining solution into the business environment. This includes integrating the model into production systems, delivering results, and monitoring its impact on business processes. |
