@@ -281,6 +281,30 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ## Python Packages
 
+- Data Processing & Feature Engineering
+  - feature-engine: A library for feature engineering in machine learning pipelines, offering transformations like encoding, imputation, and scaling.
+  - pandas: A fundamental library for data manipulation and analysis using DataFrames and Series.
+  - numpy: Provides support for numerical operations, arrays, and mathematical functions.
+
+- Data Visualization
+  - matplotlib: A widely used library for static, animated, and interactive visualizations.
+  - seaborn: Built on top of Matplotlib, it simplifies statistical data visualization.
+  - plotly: Enables interactive plots, dashboards, and web-based visualizations.
+
+- Machine Learning & Model Evaluation
+  - scikit-learn: A popular ML library offering tools for classification, regression, clustering, and preprocessing.
+  - xgboost: An optimized gradient boosting framework widely used for structured data ML tasks.
+
+- Data Profiling & Exploratory Analysis
+  - ppscore: Calculates predictive power scores to determine relationships between variables.
+  - ydata-profiling: Generates detailed EDA reports, summarizing data characteristics, correlations, and missing values.
+
+- Web Applications & Image Processing
+  - streamlit: A framework for building interactive ML and data science web apps with minimal code.
+
+- Others
+  - setuptools: A package development and distribution tool, ensuring dependencies are managed properly.
+
 ## Credits
 
 ### Code
