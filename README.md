@@ -373,6 +373,12 @@ A significantly large portion of the code used in this project was directly sour
 - Model Evaluation and Saving
   - Code to evaluate regression performance on train set and test set.
   - Code to save a machine learning model to a pickle file.
+- Dependancies
+  - Code to load requirements.txt dependencies
+- Streamlit
+  - Code to generate streamlit pages using an object-oriented approach.
+- README
+  - Template code in markdown.
 
 ### Media
 
