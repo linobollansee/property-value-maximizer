@@ -88,65 +88,67 @@ To meet these business requirements, Epics and User Stories have been defined. T
 ### User Stories
 - **Data Collection and Information Gathering Epic**
 
-  - User Story: As a developer, I need to install all required dependencies and packages so that I can effectively utilize the necessary tools for project implementation.
-  
-    - Business Requirement Addressed: BR 1 & 2
+  - User Story 1.1: Install Required Dependencies and Packages
+    - As a developer, I need to install all required dependencies and packages so that I can effectively utilize the necessary tools for project implementation.
+      - Acceptance Criteria:
+        - All dependencies are installed successfully without errors.
+      - Tasks:
+        - Install all required dependencies using the PIP package manager.
+      - How they were completed:
+        - The command `pip install -r requirements` was typed in the IDE terminal.
 
-  - User Story: As a developer, I need to import relevant data into a Jupyter Notebook so that I can conduct a thorough analysis of the dataset.
-  
-    - Business Requirement Addressed: BR 1 & 2
+  - User Story 1.2: Import Relevant Data into Jupyter Notebook
+    - As a developer, I need to import relevant data into a Jupyter Notebook so that I can conduct a thorough analysis of the dataset.
+      - Acceptance Criteria:
+        - The housing dataset is successfully downloaded from Kaggle.
+        - The dataset is in CSV format and correctly read using Pandas.
+      - Tasks:
+        - Download the housing dataset from Kaggle using the Kaggle API.
+        - Read the CSV files into DataFrames using Pandas.
+      - How they were completed:
+        - The kaggle.json credentials file was downloaded from kaggle.com and used to authenticate with the API to download the housing dataset.
+        - The `pd.read_csv()` function was used to read the CSV files into a DataFrame.
 
 - **Data Visualization, Cleaning, and Preparation Epic**
 
-  - User Story: As a developer, I want to implement a robust data cleaning process so that I can ensure the dataset is accurate, reliable, and of high quality.
-  
-    - Business Requirement Addressed: BR 1 & 2
+  - User Story 2.1: Data Cleaning and Quality Assurance
+    - As a developer, I want to implement a robust data cleaning process so that I can ensure the dataset is accurate, reliable, and of high quality.
 
 - **Model Training, Optimization, and Validation Epic**
 
-  - User Story: As a developer, I want to evaluate the performance of the predictive model so that I can ensure the reliability and accuracy of its predictions.
-  
-    - Business Requirement Addressed: BR 1 & 2
+  - User Story 3.1: Model Performance Evaluation
+    - As a developer, I want to evaluate the performance of the predictive model so that I can ensure the reliability and accuracy of its predictions.
 
-  - User Story: As a developer, I want to test individual data points against the model’s predictions so that I can determine the target variable based on my provided features.
+  - User Story 3.2: Individual Prediction Testing
+    - As a developer, I want to test individual data points against the model’s predictions so that I can determine the target variable based on my provided features.
   
-    - Business Requirement Addressed: BR 1 & 2
-
 - **Dashboard Planning, Design, and Development Epic**
 
-  - User Story: As a client, I want to access the Streamlit landing page so that I can quickly gain an overview of the project.
+  - User Story 4.1: Streamlit Landing Page Access
+    - As a client, I want to access the Streamlit landing page so that I can quickly gain an overview of the project.
   
-    - Business Requirement Addressed: BR 1 & 2
+  - User Story 4.2: Data Visualization for Insights
+    - As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
+  
+  - User Story 4.3: Correlation Analysis View
+    - As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
+  
+  - User Story 4.4: Key Features for Sale Price Prediction
+    - As a client, I want to identify the key attributes of a house that have the strongest correlation with its potential sale price so that I can make data-driven pricing decisions. The sale price prediction should be based on the set of features with the highest predictive power.
+  
+  - User Story 4.5: Interactive Prediction Input
+    - As a client, I want interactive input fields that allow me to enter custom data so that I can generate personalized predictions for the target variable.
+  
+  - User Story 4.6: Accurate Sale Price Prediction
+    - As a client, I want the most accurate possible prediction of the sale prices for the inherited properties so that I can maximize the financial returns from selling the four houses.
 
-  - User Story: As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
-  
-    - Business Requirement Addressed: BR 1 & 2
-
-  - User Story: As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
-  
-    - Business Requirement Addressed: BR 1 & 2
-
-  - User Story: As a client, I want to identify the key attributes of a house that have the strongest correlation with its potential sale price so that I can make data-driven pricing decisions. The sale price prediction should be based on the set of features with the highest predictive power.
-  
-    - Business Requirement Addressed: BR 1 & 2
-
-  - User Story: As a client, I want interactive input fields that allow me to enter custom data so that I can generate personalized predictions for the target variable.
-  
-    - Business Requirement Addressed: BR 1 & 2
-
-  - User Story: As a client, I want the most accurate possible prediction of the sale prices for the inherited properties so that I can maximize the financial returns from selling the four houses.
-  
-    - Business Requirement Addressed: BR 1 & 2
-
-  - User Story: As a developer, I need to create a dashboard to effectively visualize and communicate the results of the model's predictions.
-  
-    - Business Requirement Addressed: BR 1 & 2
+  - User Story 4.7: Predictive Model Dashboard
+    - As a developer, I need to create a dashboard to effectively visualize and communicate the results of the model's predictions.
 
 - **Dashboard Deployment and Release Epic**
 
-  - User Story: As a developer, I want to initiate the deployment process of my application on Render at an early stage so that I can conduct end-to-end manual deployment testing from the outset.
-  
-    - Business Requirement Addressed: BR 1 & 2
+  - User Story 5.1: Early Deployment on Render
+    - As a developer, I want to initiate the deployment process of my application on Render at an early stage so that I can conduct end-to-end manual deployment testing from the outset.
 
 ## Hypotheses and Validation
 
