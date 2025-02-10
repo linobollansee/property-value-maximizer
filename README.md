@@ -392,6 +392,8 @@ The Unicode icons used in this project were generated with the assistance of Cha
 
 ### Content
 
+ChatGPT was frequently used to enhance text content and minimize errors in the Jupyter Notebooks, Streamlit Dashboard, and README.md file, but it was used responsibly due to its potential for mistakes caused by its own biases in training data, misinterpretation of context, and reasoning limitations.
+
 ## Acknowledgements
 
 I would like to acknowledge my mentor, Mo Shami, for his support throughout the project. His suggestion to explore the repositories of students doing the same project and run these repositories locally with the `streamlit run app.py` terminal command when the Render or Heroku deployments were unavailable was especially helpful.
