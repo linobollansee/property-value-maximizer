@@ -382,22 +382,26 @@ A significantly large portion of the code used in this project was directly sour
 - README
   - Template code in markdown.
 
-The Code Institute code is available in the lessons at <https://learn.codeinstitute.net/> and in the 2 walkthrough projects at: <https://github.com/Code-Institute-Solutions/WalkthroughProject01> and <https://github.com/Code-Institute-Solutions/churnometer>
+- The Code Institute code is available in the lessons at <https://learn.codeinstitute.net/> and in the 2 walkthrough projects at: <https://github.com/Code-Institute-Solutions/WalkthroughProject01> and <https://github.com/Code-Institute-Solutions/churnometer>
 
-The flow of the code in this project's Jupyter Notebooks, streamlit application, and README file was based on Werner Stäblein's repository available at <https://github.com/Werner-Staeblein/Project-5>
+- The flow of the code in this project's Jupyter Notebooks, streamlit application, and README file was based on Werner Stäblein's repository available at <https://github.com/Werner-Staeblein/Project-5>
 
 ### Media
 
-The Unicode icons used in this project were generated with the assistance of ChatGPT, an AI language model developed by OpenAI. These icons were selected and formatted based on UX to enhance clarity and visual communication.
+- The Unicode icons used in this project were generated with the assistance of ChatGPT, an AI language model developed by OpenAI. These icons were selected and formatted based on UX to enhance clarity and visual communication. ChatGPT is available at: <https://chatgpt.com/>
+
+- The responsive-view image at the top of the README.md was created using: <https://ui.dev/amiresponsive>
 
 ### Content
 
-ChatGPT was frequently used to enhance text content and minimize errors in the Jupyter Notebooks, Streamlit Dashboard, and README.md file, but it was used responsibly due to its potential for mistakes caused by its own biases in training data, misinterpretation of context, and reasoning limitations.
+- ChatGPT was frequently used to enhance text content and minimize errors in the Jupyter Notebooks, Streamlit Dashboard, and README.md file, but it was used responsibly due to its potential for mistakes caused by its own biases in training data, misinterpretation of context, and reasoning limitations.
 
 ## Acknowledgements
 
-I would like to acknowledge my mentor, Mo Shami, for his support throughout the project. His suggestion to explore the repositories of students doing the same project and run these repositories locally with the `streamlit run app.py` terminal command when the Render or Heroku deployments were unavailable was especially helpful.
+- I would like to acknowledge my mentor, Mo Shami, for his support throughout the project. His suggestion to explore the repositories of students doing the same project and run these repositories locally with the `streamlit run app.py` terminal command when the Render or Heroku deployments were unavailable was especially helpful.
 
-I also would like to acknowledge Code Institute tutors Niel McEwen and Roman Rakic, for showing me how to deploy to Render.com, through the guide available at: <https://code-institute-students.github.io/deployment-docs/42-pp5-pa/>
+- I also would like to acknowledge Code Institute tutors Niel McEwen and Roman Rakic, for showing me how to deploy to Render.com, through the guide available at: <https://code-institute-students.github.io/deployment-docs/42-pp5-pa/>
 
-Roman Rakic assisted me on another occasion where one of my plots became unresponsive. I had inadvertently assigned a continuous variable with too many unique values as the hue, causing the plot to hang and preventing the retrieval of any debugging information. Roman Rakic helped me identify the issue and resolve it, which better prepared me for working on this project.
+- Roman Rakic assisted me on another occasion where one of my plots became unresponsive. I had inadvertently assigned a continuous variable with too many unique values as the hue, causing the plot to hang and preventing the retrieval of any debugging information. Roman Rakic helped me identify the issue and resolve it, which better prepared me for working on this project.
+
+- The entire Code Intitute Slack Community for its wealth of information, in particular the project-portfolio-5-predictive-analytics channel.
