@@ -180,50 +180,56 @@ To meet these business requirements, Epics and User Stories have been defined. T
   
 ## Business Case Understanding
 
-- Client’s Business Requirements
+- **Objective**  
+We want an ML model to predict the sale prices of houses based on their various attributes, using publicly available data, specifically in Ames, Iowa.
 
-  - The client requires a comprehensive analysis to understand the correlation between various house attributes and their corresponding sale prices. They expect visualizations that clearly display the features most strongly correlated with the sale price, allowing for more informed decision-making.
+- **Ideal Outcome**  
+Our ideal outcome is to deliver an interactive dashboard that not only allows the client to visualize the correlation between house features and sale prices but also predicts the sale price for each house, including the inherited ones.
 
-  - In addition to this, the client has inherited four houses and seeks a predictive model to estimate their sale prices. The client also intends to extend the model to predict sale prices for other properties in Ames, Iowa.
+- **Success Metrics**  
+The model success metrics are:
+  - Achieving an **R² score** of at least 0.75 on both the training and test datasets, indicating that the model can reliably predict sale prices.
+  - Providing actionable insights through **clear visualizations** of the features most strongly correlated with the sale price.
 
-- Traditional Data Analysis Feasibility:
+- **Model Output**  
+The model output is the **predicted sale price** of a house, expressed in USD as a continuous numeric value.
 
-  - The client could use traditional analysis methods to approximate the sale prices of the inherited houses by comparing them with similar properties in the dataset. However, this approach is prone to errors due to its subjective nature and reliance on general assumptions. Such estimates are not precise and may lead to inaccuracies in decision-making.
+- **Heuristics**  
+  - **Property Size**: We hypothesize that larger properties tend to command higher absolute sale prices. Features like **1stFlrSF**, **GrLivArea**, **LotArea**, and **TotalBsmtSF** are expected to have a positive correlation with sale price, as larger homes typically offer more utility and are more attractive to buyers.
+  - **Overall Quality**: The overall quality of the house plays a significant role in its market value. Higher quality ratings such as **OverallQual** are expected to have a strong positive correlation with sale prices, as higher quality homes are more desirable due to better materials and craftsmanship.
+  - **Property Condition**: The condition of a house, including factors such as age and renovations, is expected to influence the sale price. We hypothesize that newer homes or those with recent updates, indicated by features like **YearBuilt** and **YearRemodAdd**, will have a higher market value. A good condition rating (**OverallCond**) should also correlate positively with higher sale prices.
 
-- Dashboard vs. API:
+- **Training Data**  
+  The training data will be:
+  - **Publicly available** dataset containing various house attributes and their corresponding sale prices in Ames, Iowa.
+  - The dataset will include variables such as:
+    - **1stFlrSF**: First floor square feet
+    - **2ndFlrSF**: Second-floor square feet
+    - **BedroomAbvGr**: Bedrooms above grade (does NOT include basement bedrooms)
+    - **BsmtExposure**: Refers to walkout or garden level walls
+    - **BsmtFinType1**: Rating of basement finished area
+    - **BsmtFinSF1**: Type 1 finished square feet
+    - **BsmtUnfSF**: Unfinished square feet of basement area
+    - **TotalBsmtSF**: Total square feet of basement area
+    - **GarageArea**: Size of garage in square feet
+    - **GarageFinish**: Interior finish of the garage
+    - **GarageYrBlt**: Year garage was built
+    - **GrLivArea**: Above grade (ground) living area square feet
+    - **KitchenQual**: Kitchen quality
+    - **LotArea**: Lot size in square feet
+    - **LotFrontage**: Linear feet of street connected to property
+    - **MasVnrArea**: Masonry veneer area in square feet
+    - **EnclosedPorch**: Enclosed porch area in square feet
+    - **OpenPorchSF**: Open porch area in square feet
+    - **OverallCond**: Rates the overall condition of the house
+    - **OverallQual**: Rates the overall material and finish of the house
+    - **WoodDeckSF**: Wood deck area in square feet
+    - **YearBuilt**: Original construction date
+    - **YearRemodAdd**: Remodel date (same as construction date if no remodeling or additions)
+    - **SalePrice**: Sale Price
 
-  - The client specifically requires a dashboard. This dashboard will provide an interactive way to visualize data, explore correlations, and predict sale prices in real-time. An API is not necessary for the client’s use case.
-
-- Success Criteria for the Client:
-
-  - A successful outcome for the client is defined by delivering an in-depth analysis that reveals the key attributes most strongly correlated with house sale prices. This will guide the client in maximizing the sale prices of their inherited properties.
-
-- Ethical and Privacy Considerations:
-
-  - The dataset used for this project is publicly available, eliminating any ethical or privacy concerns associated with its use.
-
-- Agile Implementation: EPICS and User Stories:
-
-  - EPICS have been defined for clear guidance, and user stories are tracked through GitHub issues on a Kanban board, which facilitates agile project management. This ensures effective tracking and smooth collaboration throughout the project lifecycle.
-
-  - The project board can be found here: [GitHub Project Board]
-
-- Given that the task involves predicting a continuous numeric outcome, a regression model is the most appropriate for this scenario. This model will leverage the relationships between house features and sale price to make accurate predictions.
-
-- Project Inputs and Expected Outputs:
-
-  - Inputs: The house attributes derived from the publicly available dataset.
-  - Outputs: The predicted sale price for each house, expressed in USD as a continuous numeric value.
-  - The model will be used to predict the sale price of each of the four inherited houses based on their respective attributes. Additionally, a combined prediction of the total sale price for all four houses will be generated.
-  - A user interacting with the dashboard will be able to input the attributes of any house (excluding the inherited ones) through input widgets and receive an estimated sale price instantly.
-
-- Definition of Success:
-
-  - Success will be achieved if the model achieves an R² score of at least 0.75 on both the training and test datasets. This threshold will indicate that the model is sufficiently accurate and reliable.
-
-- Client Benefits:
-
-  - By utilizing this predictive model, the client will be able to optimize the sale prices for their inherited properties. The model will provide accurate, data-driven price predictions, empowering the client to make informed decisions that maximize the sale value of each house.
+- **Benefits for the Client**  
+  This ML model will allow the client to confidently estimate the sale price of any house in Ames, especially their inherited properties, and make informed decisions to maximize their sale value.
 
 ## Cross-industry standard process for data mining
 
