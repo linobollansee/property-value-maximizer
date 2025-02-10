@@ -322,7 +322,55 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ### Code
 
+A significantly large portion of the code used in this project was directly sourced from the Code Institute. This includes:
+
+- Setup and Data Collection
+  - Code to change working directory.
+  - Code to create directories.
+  - Code to download data from Kaggle.
+  - Code to extract zip files.
+  - Code to import CSV files.
+- Exploratory Data Analysis (EDA) and Data Cleaning
+  - Code to display DataFrame (df) summaries.
+  - Code to count null values.
+  - Code to count duplicates.
+  - Code to drop variables from a DataFrame (df).
+  - Code to subset columns or rows.
+  - Code to generate an EDA report.
+  - Code to visualize data cleaning effect.
+  - Code to plot numerical and categorical variables.
+  - Code to generate a heatmap.
+  - Code to generate a histogram.
+- Data Preprocessing
+  - Code to apply mean imputation.
+  - Code to apply median imputation.
+  - Code to apply categorical imputation.
+  - Code to OneHotEncode.
+  - Code to apply ordinal encoding on categorical variables.
+  - Code to apply a winsoriser transformation.
+  - Code to apply a power transformation.
+  - Code to apply a log transformation.
+  - Code to apply feature scaling using standardization.
+  - Code to check for feature engineering for numerical and categorical variables.
+  - Code to identify highly correlated features.
+  - Code to calculate correlation coefficients.
+- Data Splitting and Feature Selection
+  - Code to split train and test set.
+  - Code to identify the most important features by the best regression model.
+  - Code to extract the best regressor from search.
+  - Code to extract the best hyperparameter.
+  - Code to check the best model.
+- Modeling and Hyperparameter Tuning
+  - Code to perform hyperparameter optimization.
+  - Code to summarizing the results of the grid searches.
+  - Code to fit a machine learning pipeline.
+- Model Evaluation and Saving
+  - Code to evaluate regression performance on train set and test set.
+  - Code to save a machine learning model to a pickle file.
+
 ### Media
+
+The Unicode icons used in this project were generated with the assistance of ChatGPT, an AI language model developed by OpenAI. These icons were selected and formatted based on UX to enhance clarity and visual communication.
 
 ### Content
 
