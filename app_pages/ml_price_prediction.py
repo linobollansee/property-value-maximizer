@@ -50,7 +50,7 @@ def ml_price_prediction_body():
         "tuned aiming for at least 0.75 accuracy in predicting the sales "
         "price of a property with a set of attributes.\n"
         "* The pipeline performance for the best model on the train and test "
-        "set is R2 = 0.88 and R2 = 0.79 respectively.\n"
+        "set is R2 = 0.869 and R2 = 0.847 respectively.\n"
         "* We present the pipeline steps, best features list along with "
         "feature importance plot, pipeline performance and regression "
         "performance report below."
