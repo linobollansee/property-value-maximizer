@@ -375,3 +375,5 @@ The Unicode icons used in this project were generated with the assistance of Cha
 ### Content
 
 ## Acknowledgements
+
+I would like to acknowledge my mentor, Mo Shami, for his support throughout the project. His suggestion to explore the repositories of students doing the same project and run these repositories locally with the `streamlit run app.py` terminal command when the Render or Heroku deployments were unavailable was especially helpful.
