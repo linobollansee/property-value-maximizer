@@ -374,11 +374,16 @@ A significantly large portion of the code used in this project was directly sour
   - Code to evaluate regression performance on train set and test set.
   - Code to save a machine learning model to a pickle file.
 - Dependancies
-  - Code to load requirements.txt dependencies
+  - Code to load requirements.txt dependencies.
+- Jupyter Notebooks
+  - Code of a ipynb template file.
 - Streamlit
   - Code to generate streamlit pages using an object-oriented approach.
 - README
   - Template code in markdown.
+
+The code in the Jupyter Notebooks, streamlit application, and README file was based on Werner Stäblein's repository available at 
+<https://github.com/Werner-Staeblein/Project-5>
 
 ### Media
 
