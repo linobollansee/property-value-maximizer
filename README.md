@@ -397,3 +397,7 @@ ChatGPT was frequently used to enhance text content and minimize errors in the J
 ## Acknowledgements
 
 I would like to acknowledge my mentor, Mo Shami, for his support throughout the project. His suggestion to explore the repositories of students doing the same project and run these repositories locally with the `streamlit run app.py` terminal command when the Render or Heroku deployments were unavailable was especially helpful.
+
+I also would like to acknowledge Code Institute tutors Niel McEwen and Roman Rakic, for showing me how to deploy to Render.com, through the guide available at: <https://code-institute-students.github.io/deployment-docs/42-pp5-pa/>
+
+Roman Rakic assisted me on another occasion where one of my plots became unresponsive. I had inadvertently assigned a continuous variable with too many unique values as the hue, causing the plot to hang and preventing the retrieval of any debugging information. Roman Rakic helped me identify the issue and resolve it, which better prepared me for working on this project.
