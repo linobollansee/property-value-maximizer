@@ -20,7 +20,7 @@ The project is accessible at the following URL: <https://property-value-maximize
     - [Categorical encoding](#categorical-encoding)
     - [Numerical Transformations](#numerical-transformations)
 - [Dashboard Features](#dashboard-features)
-- [Bugs](#bugs)
+- [Bugs and Fixes](#bugs-and-fixes)
 - [Project Testing](#project-testing)
 - [Deployment](#deployment)
 - [Python Packages](#python-packages)
@@ -273,7 +273,13 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ## Dashboard Features
 
-## Bugs
+## Bugs and Fixes
+
+ModuleNotFoundError: No module named 'pkg_resources'
+
+![pkg-resources-bug](docs/readme-images/pkg-resources-bug-readme.png)
+
+This bug was fixed by adding setuptools==75.8.0 to requirements.txt
 
 ## Project Testing
 
