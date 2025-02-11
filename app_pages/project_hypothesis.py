@@ -2,8 +2,16 @@ import streamlit as st
 
 
 def project_hypothesis_body():
+    """
+    Displays the hypotheses and their validation results in a Streamlit app.
+    This section communicates the project's key assumptions regarding property
+    size, quality, and condition in relation to sale price.
+    """
+    # Title for the section of the Streamlit app
     st.write("## Project Hypotheses and Validation")
 
+    # Display the first hypothesis about the relationship between property size
+    # and sale price
     st.success(
         "🔍**First Hypothesis : The Relationship Between Property Size "
         "and Sale Price**\n\n"
@@ -17,6 +25,11 @@ def project_hypothesis_body():
         "correlation between property size-related features and sale "
         "price. This suggests that, as expected, larger homes tend to "
         "sell for higher prices, reinforcing our initial assumption.\n\n"
+    )
+
+    # Display the second hypothesis about the impact of overall quality on sale
+    # price
+    st.success(
         "🔍**Second Hypothesis: The Impact of Overall Quality on Sale "
         "Price**\n\n"
         "We hypothesize that the overall quality of a house plays a "
@@ -31,6 +44,11 @@ def project_hypothesis_body():
         "consistently achieve higher market valuations, supporting our "
         "hypothesis that construction quality is a key factor in "
         "pricing dynamics.\n\n"
+    )
+
+    # Display the third hypothesis about the influence of property condition on
+    # market value
+    st.success(
         "🔍**Third Hypothesis: The Influence of Property Condition on "
         "Market Value**\n\n"
         "We further hypothesize that a property's overall condition "
