@@ -68,10 +68,6 @@ def sales_price_prediction_body():
     price_prediction_live = predict_price(X_live, house_features,
                                           regression_pipe)
 
-    # Display the prediction for the custom house
-    st.write(f"### Predicted Sale Price for Your House: "
-             f"**${round(price_prediction_live[0])}**")
-
 
 def DrawInputsWidgets(house_features):
     """
@@ -159,6 +155,6 @@ def DrawInputsWidgets(house_features):
 
         # Display the predicted price
         st.write(f"**Predicted House Price:** "
-                 f"${round(predicted_price[0], 2):,}")
+                 f"💲{round(predicted_price[0], 2):,}")
 
     return X_live
