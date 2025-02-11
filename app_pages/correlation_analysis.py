@@ -108,38 +108,55 @@ def plot_target_hist(df, target_var):
 
 def heatmap_corr(df, threshold, figsize=(20, 12), font_annot=8):
     """
-    Function to create heatmap using correlations.
+    Function to create a correlation heatmap with a mask applied.
+    The mask hides the upper triangle and values with absolute correlation
+    less than the given threshold.
     """
     if len(df.columns) > 1:
+        # Create a mask with the same shape as df
         mask = np.zeros_like(df, dtype=bool)
+        # Mask out the upper triangle
         mask[np.triu_indices_from(mask)] = True
+        # Mask values with an absolute value below the threshold
         mask[abs(df) < threshold] = True
 
-        fig = px.imshow(df, title="Correlation Heatmap",
-                        color_continuous_scale='viridis',
-                        labels={'x': 'Features', 'y': 'Features'},
-                        text_auto=True)
+        # Apply the mask to the dataframe
+        df_masked = df.mask(mask)
+
+        fig = px.imshow(
+            df_masked,
+            title="Correlation Heatmap",
+            color_continuous_scale='viridis',
+            labels={'x': 'Features', 'y': 'Features'},
+            text_auto=True
+        )
         st.plotly_chart(fig)
 
 
 def heatmap_pps(df, threshold, figsize=(20, 12), font_annot=8):
     """
-    Function to create heatmap with pps.
+    Function to create a PPS heatmap with a mask applied.
+    The mask hides values with absolute PPS below the given threshold.
     """
     if len(df.columns) > 1:
         mask = np.zeros_like(df, dtype=bool)
         mask[abs(df) < threshold] = True
 
-        fig = px.imshow(df, title="PPS Heatmap",
-                        color_continuous_scale='viridis',
-                        labels={'x': 'Features', 'y': 'Features'},
-                        text_auto=True)
+        df_masked = df.mask(mask)
+
+        fig = px.imshow(
+            df_masked,
+            title="PPS Heatmap",
+            color_continuous_scale='viridis',
+            labels={'x': 'Features', 'y': 'Features'},
+            text_auto=True
+        )
         st.plotly_chart(fig)
 
 
 def CalculateCorrAndPPS(df):
     """
-    Function for calculation of correlations and pps.
+    Function for calculation of correlations and PPS.
     """
     df_corr_spearman = df.corr(method="spearman")
     df_corr_spearman.name = 'corr_spearman'
@@ -161,7 +178,7 @@ def DisplayCorrAndPPS(df_corr_pearson, df_corr_spearman, pps_matrix,
                       CorrThreshold, PPS_Threshold,
                       figsize=(20, 12), font_annot=8):
     """
-    Function to display the correlations and pps.
+    Function to display the correlations and PPS heatmaps.
     """
     heatmap_corr(df=df_corr_spearman, threshold=CorrThreshold, figsize=figsize,
                  font_annot=font_annot)
