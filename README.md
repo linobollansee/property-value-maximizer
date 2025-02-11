@@ -400,9 +400,12 @@ A significantly large portion of the code used in this project was directly sour
 - README
   - Template code in markdown.
 
-- The Code Institute code is available in the lessons at <https://learn.codeinstitute.net/> and in the 2 walkthrough projects at: <https://github.com/Code-Institute-Solutions/WalkthroughProject01> and <https://github.com/Code-Institute-Solutions/churnometer>
+The Code Institute code is available here:
+- Lessons at <https://learn.codeinstitute.net/>
+- Walkthrough projects at <https://github.com/Code-Institute-Solutions/WalkthroughProject01> and <https://github.com/Code-Institute-Solutions/churnometer>
+- Template: <https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues>
 
-- The flow of the code in this project's Jupyter Notebooks, streamlit application, and README file was based on Werner Stäblein's repository available at <https://github.com/Werner-Staeblein/Project-5>
+The flow of the code in this project's Jupyter Notebooks, streamlit application, and README file was based on Werner Stäblein's repository available at <https://github.com/Werner-Staeblein/Project-5>
 
 ### Media
 
