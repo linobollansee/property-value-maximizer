@@ -151,14 +151,46 @@ To meet these business requirements, Epics and User Stories have been defined. T
   
   - User Story 4.6: Accurate Sale Price Prediction
     - As a client, I want the most accurate possible prediction of the sale prices for the inherited properties so that I can maximize the financial returns from selling the four houses.
+      - Acceptance Criteria:
+        - The sale prices of the inherited properties must be accurately predicted.
+      - Tasks:
+        - Predict the price accurately of the inherited properties.
+      - How they were completed:
+        - A machine learning regression model was used to accurately predict the price of the inherited properties.
 
   - User Story 4.7: Predictive Model Dashboard
     - As a developer, I need to create a dashboard to effectively visualize and communicate the results of the model's predictions.
+      - Acceptance Criteria:
+        - A streamlit dashboard must be created.
+        - The dashboard must visualize and communicate the results of the model's predictions.
+      - Tasks:
+        - Create a streamlit dashboard.
+        - Create a dashboard that visualizes and communicates the results of the model's predictions.
+      - How they were completed:
+        - The Python streamlit library was used to create a dashboard.
+        - A dashboard was created that displays the model's predictions through DataFrames and a Sales Price calculator.
 
 - **Dashboard Deployment and Release Epic**
 
   - User Story 5.1: Early Deployment on Render
     - As a developer, I want to initiate the deployment process of my application on Render at an early stage so that I can conduct end-to-end manual deployment testing from the outset.
+      - Acceptance Criteria:
+        - The application must be successfully deployed to Render.
+        - Build and start commands must be correctly configured.
+        - The environment variables must be configured correctly for deployment.
+        - Deployment is automated with auto-deploy.   
+      - Tasks:
+        - Deploy the application to Render
+        - Define the necessary build and start commands in Render settings
+        - Configure environment variables required for deployment.
+        - Enable auto-deploy from the connected repository. 
+      - How they were completed:
+        - A new Web Service was created on Render
+        - The build command was set to `pip install -r requirements.txt && ./setup.sh` and the start command to `streamlit run app.py`
+        - Environment variables were set to `PORT` `Value: 8501` and `PYTHON_VERSION` `Value: 3.12.1`
+        - Auto-deploy settings were set to Yes.
+
+
 
 ## Hypotheses and Validation
 
