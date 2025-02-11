@@ -52,7 +52,7 @@ def sales_price_prediction_body():
                               'PredictedSalePrice']])
 
     # Calculate the sum of predicted prices
-    total_price = round(X_inherited['PredictedSalePrice'].sum())
+    total_price = X_inherited['PredictedSalePrice'].sum()
 
     # Display the total predicted sale price
     st.write(f"### Total Predicted Sale Price for All Inherited Houses: "
