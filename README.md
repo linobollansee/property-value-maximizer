@@ -23,6 +23,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Bugs and Fixes](#bugs-and-fixes)
 - [Project Testing](#project-testing)
 - [Deployment](#deployment)
+- [Technologies](#technologies)
 - [Python Packages](#python-packages)
 - [Credits](#credits)
   - [Code](#code)
@@ -396,6 +397,14 @@ This bug was fixed by adding setuptools==75.8.0 to requirements.txt
 10. Set Instance Type: Free
 11. Set the Environment Variables: `Key: PORT` `Value: 8501` and `Key: PYTHON_VERSION` `Value: 3.12.1`
 12. Click Deploy Web Service
+
+## Technologies
+
+- Github: The project's source code is hosted on GitHub at <https://github.com/>.
+- GitHub Codespaces: The cloud-based integrated developmentenvironment (IDE) GitHub Codespaces at <https://github.com/> was used for code editing, running Visual Studio Code (Version 1.96.3).
+- Render: The web application is deployed on Render at <https://render.com/>.
+- CI Python Linter: Code formatting and adherence to PEP8 standards were ensured using the CI Python Linter at <https://pep8ci.herokuapp.com/>
+
 
 ## Python Packages
 
