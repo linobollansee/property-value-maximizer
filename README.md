@@ -125,9 +125,10 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - Create visualizations (bar charts, box plots, histograms).
         - Apply imputation to missing values.
       - How they were completed:
-        - The expression `df.isna().sum()` returns a Series with the count of missing values (NaN) for each column in the DataFrame, df.isnull().sum()
-
-        - df.isnull().sum()
+        - The expression `df.isnull()` or `df.isna()` returns missing values.
+        - the expression `ProfileReport(df=df, minimal=True)` generates an automated exploratory data analysis (EDA) report.
+        - A custom function called `DataCleaningEffect()` visualizes the effects of cleaning.
+        - 
 - **Model Training, Optimization, and Validation Epic**
 
   - User Story 3.1: Model Performance Evaluation
@@ -160,11 +161,11 @@ To meet these business requirements, Epics and User Stories have been defined. T
   - User Story 4.2: Data Visualization for Insights
     - As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
       - Acceptance Criteria:
-        - 
+        - The client should be able to view data visualizations that illustrate the relationship between the target variable.
       - Tasks:
-        - 
+        - Create a streamlit page that shows data visualizations that illustrate the relationship between the target variable.
       - How they were completed:
-        - 
+        - A correlation analysis streamlit page was created that shows data visualizations that illustrate the relationship between the target variable.
   
   - User Story 4.3: Correlation Analysis View
     - As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
@@ -412,8 +413,6 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 
 - Test checkboxes in the streamlit app
 
-- 
-
 ## Deployment
 
 1. Log in to Render.com using Github.
@@ -461,6 +460,7 @@ os.environ["PYTHONWARNINGS"] = "ignore"
   - streamlit: A framework for building interactive ML and data science web apps with minimal code.
 
 - Others
+  - kaggle: A library for accessing and managing Kaggle datasets via the Kaggle API.
   - setuptools: A package development and distribution tool, ensuring dependencies are managed properly.
 
 ## Credits
