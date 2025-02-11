@@ -373,15 +373,46 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ## Dashboard Features
 
+- Streamlit sidebar
+
+- Project Overview page
+
+- Correlation Analysis page
+
+- Sale Price Prediction page
+
+- Hypothesis Validation page
+
+- Machine Learning Model page
+
+
 ## Bugs and Fixes
+
+- The `ppscore` library caused the following error:
 
 ModuleNotFoundError: No module named 'pkg_resources'
 
 ![pkg-resources-bug](docs/readme-images/pkg-resources-bug-readme.png)
 
-This bug was fixed by adding setuptools==75.8.0 to requirements.txt
+This bug was fixed by adding `setuptools==75.8.0` to `requirements.txt`, as it is now necessary to have `setuptools` installed to use `ppscore` with current Python versions.
+
+- During the hyperparameter optimization search, an extreme amount of FutureWarnings cluttered the output cell. It prevented the Jupyter Notebook from being managable:
+![future-warning-bug](docs/readme-images/future-warning-bug-readme.png)
+
+I added this code to prevent the clutter:
+```
+import warnings
+warnings.filterwarnings("ignore")
+os.environ["PYTHONWARNINGS"] = "ignore"
+```
+
+
 
 ## Project Testing
+
+- Test checkboxes in the streamlit app
+
+- 
 
 ## Deployment
 
