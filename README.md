@@ -119,32 +119,74 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - Visualizations should demonstrate the effect of cleaning.
         - Missing values are imputed.
       - Tasks:   
-        - Inspect the dataset to identify missing or null values across all columns.
+        - Inspect the dataset to identify missing or null values.
         - A complete data profile report is generated.
         - Create visualizations (bar charts, box plots, histograms).
         - Apply imputation to missing values.
+      - How they were completed:
+        - The expression `df.isna().sum()` returns a Series with the count of missing values (NaN) for each column in the DataFrame, df.isnull().sum()
 
+        - df.isnull().sum()
 - **Model Training, Optimization, and Validation Epic**
 
   - User Story 3.1: Model Performance Evaluation
     - As a developer, I want to evaluate the performance of the predictive model so that I can ensure the reliability and accuracy of its predictions.
+      - Acceptance Criteria:
+        - 
+      - Tasks:
+        - 
+      - How they were completed:
+        - 
 
   - User Story 3.2: Individual Prediction Testing
     - As a developer, I want to test individual data points against the model’s predictions so that I can determine the target variable based on my provided features.
-  
+      - Acceptance Criteria:
+        - 
+      - Tasks:
+        - 
+      - How they were completed:
+        - 
 - **Dashboard Planning, Design, and Development Epic**
 
   - User Story 4.1: Streamlit Landing Page Access
     - As a client, I want to access the Streamlit landing page so that I can quickly gain an overview of the project.
-  
+      - Acceptance Criteria:
+        - The client should be able to quickly gain an overview of the project through the Streamlit landing page.
+      - Tasks:
+        - Create a streamlit landing page that allows the client to quickly gain an overview of the project.
+      - How they were completed:
+        -  A Streamlit multi-page application with a sidebar was created to allow the client to quickly gain an overview of the project. 
   - User Story 4.2: Data Visualization for Insights
     - As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
+      - Acceptance Criteria:
+        - 
+      - Tasks:
+        - 
+      - How they were completed:
+        - 
   
   - User Story 4.3: Correlation Analysis View
     - As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
-  
+      - Acceptance Criteria:
+        - The correlation analysis page has to be accessible through the Streamlit sidebar.
+        - The page should display visual representation between features and the target variable.
+        - The page should allow the client to interact with the heatmap.
+      - Tasks:
+        - Create a correlation analysis page that is accessible through the Streamlit sidebar.
+        - Create a heatmap or visual representation of the correlations between features and the target variable.
+        - Create a page that allows the client to interact with the heatmaps.
+      - How they were completed:
+        - The correlation analysis page was created and made accesible through the Streamlit sidebar by adding its body function `correlation_analysis_body()` to `app.py`
+        - The visual representations were created with `px.histogram` for histograms, `px.imshow` for heatmaps, and `px.scatter` for scatter plots.
+        - The heatmaps were plotted on the page with Plotly which has built-in interactivity.
   - User Story 4.4: Key Features for Sale Price Prediction
-    - As a client, I want to identify the key attributes of a house that have the strongest correlation with its potential sale price so that I can make data-driven pricing decisions. The sale price prediction should be based on the set of features with the highest predictive power.
+    - As a client, I want to identify the key attributes of a house that have the strongest correlation with its potential sale price so that I can make data-driven pricing decisions.
+      - Acceptance Criteria: 
+        - The client should be able to identify the key attributes of a house that have the strongest correlation with its potential sale price.
+      - Tasks:
+        - Perform pearson and spearman correlation analysis to find the relationship between different features and the sale price.
+      - How they were completed:
+        - The code `df.corr(method="pearson")` was used to calculate pearson correlation, and `df.corr(method="spearman")` to calculate spearman correlation on the DataFrame.
   
   - User Story 4.5: Interactive Prediction Input
     - As a client, I want interactive input fields that allow me to enter custom data so that I can generate personalized predictions for the target variable.
@@ -198,8 +240,6 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - The build command was set to `pip install -r requirements.txt && ./setup.sh` and the start command to `streamlit run app.py`
         - Environment variables were set to `PORT` `Value: 8501` and `PYTHON_VERSION` `Value: 3.12.1`
         - Auto-deploy settings were set to Yes.
-
-
 
 ## Hypotheses and Validation
 
