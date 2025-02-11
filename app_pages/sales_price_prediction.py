@@ -56,7 +56,7 @@ def sales_price_prediction_body():
 
     # Display the total predicted sale price
     st.write(f"### Total Predicted Sale Price for All Inherited Houses: "
-             f"**💲{round(total_price[0], 2):,}**")
+             f"**💲{round(total_price, 2):,}**")
 
     # Title for the random house prediction section
     st.write("#### Predict Sales Price for Your Own House")
