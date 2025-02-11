@@ -52,11 +52,11 @@ def sales_price_prediction_body():
                               'PredictedSalePrice']])
 
     # Calculate the sum of predicted prices
-    total_price = round(X_inherited['PredictedSalePrice'].sum(), 2)
+    total_price = round(X_inherited['PredictedSalePrice'].sum())
 
     # Display the total predicted sale price
     st.write(f"### Total Predicted Sale Price for All Inherited Houses: "
-             f"**💲{total_price}**")
+             f"**💲{round(total_price[0], 2):,}**")
 
     # Title for the random house prediction section
     st.write("#### Predict Sales Price for Your Own House")
@@ -154,7 +154,7 @@ def DrawInputsWidgets(house_features):
         predicted_price = predict_price(X_live, house_features, price_pipeline)
 
         # Display the predicted price
-        st.write(f"### **Predicted House Price: **"
+        st.write(f"### Predicted House Price:"
                  f"**💲{round(predicted_price[0], 2):,}**")
 
     return X_live
