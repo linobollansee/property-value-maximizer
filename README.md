@@ -113,6 +113,16 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
   - User Story 2.1: Data Cleaning and Quality Assurance
     - As a developer, I want to implement a robust data cleaning process so that I can ensure the dataset is accurate, reliable, and of high quality.
+      - Acceptance Criteria:
+        - All missing or null values in the dataset must be identified.
+        - A data profile report must be generated.
+        - Visualizations should demonstrate the effect of cleaning.
+        - Missing values are imputed.
+      - Tasks:   
+        - Inspect the dataset to identify missing or null values across all columns.
+        - A complete data profile report is generated.
+        - Create visualizations (bar charts, box plots, histograms).
+        - Apply imputation to missing values.
 
 - **Model Training, Optimization, and Validation Epic**
 
