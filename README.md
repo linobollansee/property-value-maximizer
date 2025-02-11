@@ -148,6 +148,15 @@ To meet these business requirements, Epics and User Stories have been defined. T
   
   - User Story 4.5: Interactive Prediction Input
     - As a client, I want interactive input fields that allow me to enter custom data so that I can generate personalized predictions for the target variable.
+      - Acceptance Criteria:
+        - The input fields should allow the user to enter values for each feature or variable that influences the prediction.
+        - Each input field must have validation to ensure the entered data is in the correct format.
+      - Tasks:
+        - Create input fields that allow the user to enter values for each feature or variable that influences the prediction.
+        - Create input fields with validation to ensure the entered data is in the correct format.
+      - How they were completed:
+        - Streamlit widgets were created with `st.number_input` to allow the user to enter values for each feature or variable that influences the prediction.
+        - Input widgets were given a defined `min_value` and `max_value` to ensure the input is within a realistic range.
   
   - User Story 4.6: Accurate Sale Price Prediction
     - As a client, I want the most accurate possible prediction of the sale prices for the inherited properties so that I can maximize the financial returns from selling the four houses.
