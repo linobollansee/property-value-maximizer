@@ -380,17 +380,57 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ## Dashboard Design
 
-- Streamlit sidebar
+- Streamlit sidebar: A Streamlit sidebar is a UI component in Streamlit that allows you to place widgets, controls, and other elements in a collapsible side panel. It helps organize interactive elements separately from the main content, improving usability and layout. This sidebar supports:
+  - Navigation – Allow users to switch between different pages or sections of an app. Pages available:  
+    - 👁️ Project Overview
+    - 📈 Correlation Analysis
+    - 🔮 Sale Price Prediction
+    - 🔬 Hypothesis Validation
+    - 🤖 Machine Learning Model
+  - Business requirements covered: 
+    - BR1 - The client wants to understand how various house attributes correlate with the sale price in Ames, Iowa. She expects data visualizations that illustrate the relationships between these variables and the sale price.
+    - BR2 - The client is looking to predict the sale price for her four inherited houses, as well as for any other property in Ames, Iowa.
+
+![streamlit-sidebar-readme.png](docs/readme-images/streamlit-sidebar-readme.png)
 
 - Project Overview page
+  - Project Overview: Describes the objective of maximizing property sale prices using a machine learning model.
+  - Project Dataset: Provides details about the data source, size, and attributes used for analysis.
+  - Business Requirements: Outlines the goals of analyzing house characteristics and developing a predictive pricing model.
+  - Additional Information: Refers to further details available in a README file.
+
+![project-overview-readme](docs/readme-images/project-overview-readme.png)
 
 - Correlation Analysis page
+  -
+  -
+  -
+
+- Correlation Analysis page
+![correlation-analysis-readme](docs/readme-images/correlation-analysis-readme.png)
 
 - Sale Price Prediction page
+  -
+  -
+  -
+
+![sale-price-prediction-readme](docs/readme-images/sale-price-prediction-readme.png)
 
 - Hypothesis Validation page
+  -
+  -
+  -
+
+- Hypothesis Validation page
+![hypothesis-validation-readme](docs/readme-images/hypothesis-validation-readme.png)
 
 - Machine Learning Model page
+  -
+  -
+  -
+
+- Machine Learning Model page
+![machine-learning-model-readme](docs/readme-images/machine-learning-model-readme.png)
 
 ## Plots
 
