@@ -140,11 +140,11 @@ To meet these business requirements, Epics and User Stories have been defined. T
   - User Story 3.1: Model Performance Evaluation
     - As a developer, I want to evaluate the performance of the predictive model so that I can ensure the reliability and accuracy of its predictions.
       - Acceptance Criteria:
-        - 
+        - The predictive model must be evaluated to ensure reliability and accuracy of its predictions.
       - Tasks:
-        - 
+        - Evaluate the predictive model to ensure reliability and accuracy of its predictions.
       - How they were completed:
-        - 
+        - An R2 score of at least 0.75 on the train set and test set was measured.
 
   - User Story 3.2: Individual Prediction Testing
     - As a developer, I want to test individual data points against the model’s predictions so that I can determine the target variable based on my provided features.
