@@ -433,9 +433,9 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 - Sale Price Prediction page
   - Inherited Houses (Filtered Data for Prediction) are displayed in a DataFrame table with the most important house features for price prediction.
   - The Predicted Sale Prices for Inherited Houses are displayed in a DataFrame table with the most important house features for price prediction.
-  - A Total Predicted Sale Price for All Inherited Houses is displayed: 💲632,680.27
+  - A Total Predicted Sale Price for All Inherited Houses is displayed: 💲632,680.27 and it has commas as thousands separators, and rounding to 2 decimal places to represent cents.   
   - Predict Sales Price for Your Own House can be set with 5 number input widgets and calculated with a Calculate House price widget button.
-  - A "SUCCESSFULLY CALCULATED" message appears along with the Price for Your Own House, which depends on your input values.
+  - A "SUCCESSFULLY CALCULATED" message appears along with the Price for Your Own House, which depends on input values.
 
 ![sale-price-prediction-readme](docs/readme-images/sale-price-prediction-readme.png)
 
