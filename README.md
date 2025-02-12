@@ -10,7 +10,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Dataset Content](#dataset-content)
 - [Business Requirements](#business-requirements)
 - [Agile Methodology](#agile-methodology)
-- [Hypotheses and Validation](#hypotheses-and-validation)
+- [Hypothesis and how to validate hypothesis](#Hypothesis and how to validate hypothesis)
 - [Rationale to map the business requirements to the Data Visualisations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 - [Business Case Understanding](#business-case-understanding)
 - [Cross-industry standard process for data mining](#cross-industry-standard-process-for-data-mining)
@@ -255,18 +255,21 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - Environment variables were set to `PORT` `Value: 8501` and `PYTHON_VERSION` `Value: 3.12.1`
         - Auto-deploy settings were set to Yes.
 
-## Hypotheses and Validation
+## Hypothesis and how to validate hypothesis
 
 - First Hypothesis: The Relationship Between Property Size and Sale Price
   - Our first hypothesis posits that the size of a property has a direct and positive influence on its sale price. This assumption is grounded in the widely accepted notion that larger properties tend to offer more space and functionality, which in turn, makes them more attractive to potential buyers. The increased square footage of a property typically allows for additional rooms, larger living areas, and greater customization options, all of which are desirable attributes in a real estate market. Consequently, it is expected that properties with greater size will command higher sale prices due to their enhanced utility and appeal.
+    - How to validate hypothesis: We will examine the relationship between house size attributes and sale price to test this hypothesis.
     - Hypothesis Confirmation: Following a rigorous correlation analysis of the dataset, we observed a positive and moderate correlation between the size-related features of the properties and their sale prices. This finding validates our hypothesis, as it indicates that larger properties indeed tend to sell for higher prices. The data clearly supports the notion that, all other factors being equal, the size of a property plays a significant role in determining its market value, confirming our initial assumption.
 
 - Second Hypothesis: The Impact of Overall Quality on Sale Price
   - Our second hypothesis focuses on the role of a property's overall quality in influencing its sale price. We hypothesize that properties with higher quality ratings, which reflect superior materials, craftsmanship, and design, will be priced higher in the market. Buyers are likely to place a premium on well-constructed homes that offer longevity, comfort, and aesthetic appeal, which in turn boosts their market value. As such, homes with higher quality ratings should be more desirable and consequently demand higher prices.
+    - How to validate hypothesis: We will examine the correlations between various attributes related to house quality assessment, such as 'OverallQual' and 'KitchenQual,' in order to validate the hypothesis.
     - Hypothesis Confirmation: After analyzing the data, we confirmed that there is a strong correlation between a property's overall quality rating and its sale price. Homes that received higher quality ratings were consistently priced higher in the market, reinforcing the idea that construction quality plays a pivotal role in determining a property’s value. This analysis supports our hypothesis that factors such as the quality of materials, craftsmanship, and overall design are crucial in shaping buyer perceptions and influencing the final sale price.
 
 - Third Hypothesis: The Influence of Property Condition on Market Value
   - For our third hypothesis, we investigate how a property's condition affects its sale price. We hypothesize that homes in excellent condition, particularly those that have undergone recent renovations or are newly built, will be more desirable to buyers and therefore will command higher sale prices. The condition of a property often reflects its upkeep and can signal to buyers the level of maintenance and care invested in the home. Properties in better condition are generally perceived as more move-in ready, which makes them more attractive to prospective buyers looking for immediate comfort without the need for costly repairs or improvements.
+    - How to validate hypothesis: We will explore the data related to 'YearBuilt' and 'YearRemodAdd' to validate this hypothesis.
     - Hypothesis Confirmation: Our analysis supports this hypothesis by revealing a positive and moderate correlation between sale price and key factors such as the property's construction year and the year of its last remodel. The data suggests that newer homes and those with recent upgrades tend to sell at higher prices, highlighting the importance of property condition in the pricing process. The findings confirm that well-maintained homes or those with modern features are more likely to achieve higher sale prices, underscoring the influence of condition on market value.
 
 ## Rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -429,7 +432,7 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 ### Sale Price Prediction page
 
 - Sale Price Prediction page
-  -
+  - 
   -
   -
 
