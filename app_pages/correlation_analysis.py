@@ -81,7 +81,8 @@ def correlation_analysis_body():
         variable.
         """
         fig = px.scatter(df, x=col, y=target_var,
-                         title=f"Scatter Plot of {col} vs {target_var}")
+                         title=f"Scatter Plot of {col} vs {target_var}",
+                         trendline="ols", trendline_color_override="red")
         st.plotly_chart(fig)
 
     def plot_categorical(df, col, target_var):
