@@ -165,7 +165,7 @@ def DrawInputsWidgets(house_features):
         predicted_price = predict_price(X_live, house_features, price_pipeline)
 
         # Display the predicted house price on the Streamlit page
-        st.write(f"### SUCCESFULLY CALCULATED \n"
+        st.write(f"### SUCCESSFULLY CALCULATED \n"
                  f"### Price for Your Own House:"
                  f"💲{round(predicted_price[0], 2):,}")
 
