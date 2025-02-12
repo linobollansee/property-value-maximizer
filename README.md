@@ -20,6 +20,12 @@ The project is accessible at the following URL: <https://property-value-maximize
     - [Categorical encoding](#categorical-encoding)
     - [Numerical Transformations](#numerical-transformations)
 - [Dashboard Design](#dashboard-design)
+  - [Streamlit sidebar](#streamlit-sidebar)
+  - [Project Overview page](#project-overview-page)
+  - [Correlation Analysis page](#correlation-analysis-page)
+  - [Sale Price Prediction page](#sale-price-prediction-page)
+  - [Hypothesis Validation page](#hypothesis-validation-page)
+  - [Machine Learning model page](#machine-learning-model-page)
 - [Plots](#plots)
   - [Distribution and Correlation Plots](#distribution-and-correlation-plots)
   - [Box Plots](#box-plots)
@@ -380,6 +386,8 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ## Dashboard Design
 
+### Streamlit sidebar
+
 - Streamlit sidebar: A Streamlit sidebar is a UI component in Streamlit that allows you to place widgets, controls, and other elements in a collapsible side panel. It helps organize interactive elements separately from the main content, improving usability and layout. This sidebar supports:
   - Navigation – Allow users to switch between different pages or sections of an app. Pages available:  
     - 👁️ Project Overview
@@ -393,6 +401,8 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 ![streamlit-sidebar-readme.png](docs/readme-images/streamlit-sidebar-readme.png)
 
+### Project Overview page
+
 - Project Overview page
   - Project Overview: Describes the objective of maximizing property sale prices using a machine learning model.
   - Project Dataset: Provides details about the data source, size, and attributes used for analysis.
@@ -400,6 +410,8 @@ Categorical encoding was applied to convert ordinal categories into numerical va
   - Additional Information: Refers to further details available in a README file.
 
 ![project-overview-readme](docs/readme-images/project-overview-readme.png)
+
+### Correlation Analysis page
 
 - Correlation Analysis page
   -
@@ -409,12 +421,17 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 - Correlation Analysis page
 ![correlation-analysis-readme](docs/readme-images/correlation-analysis-readme.png)
 
+
+### Sale Price Prediction page
+
 - Sale Price Prediction page
   -
   -
   -
 
 ![sale-price-prediction-readme](docs/readme-images/sale-price-prediction-readme.png)
+
+### Hypothesis Validation page
 
 - Hypothesis Validation page
   -
@@ -423,6 +440,8 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 - Hypothesis Validation page
 ![hypothesis-validation-readme](docs/readme-images/hypothesis-validation-readme.png)
+
+### Machine Learning Model page
 
 - Machine Learning Model page
   -
