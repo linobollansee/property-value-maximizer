@@ -10,7 +10,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Dataset Content](#dataset-content)
 - [Business Requirements](#business-requirements)
 - [Agile Methodology](#agile-methodology)
-- [Hypothesis and how to validate hypothesis](#Hypothesis and how to validate hypothesis)
+- [Hypothesis and how to validate hypothesis](#hypothesis-and-how-to-validate-hypothesis)
 - [Rationale to map the business requirements to the Data Visualisations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 - [Business Case Understanding](#business-case-understanding)
 - [Cross-industry standard process for data mining](#cross-industry-standard-process-for-data-mining)
