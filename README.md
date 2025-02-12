@@ -562,7 +562,7 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 ## Technologies
 
 - Github: The project's source code is hosted on GitHub at <https://github.com/>.
-- GitHub Codespaces: The cloud-based integrated developmentenvironment (IDE) GitHub Codespaces at <https://github.com/> was used for code editing, running Visual Studio Code (Version 1.96.3).
+- GitHub Codespaces: The cloud-based integrated development environment (IDE) GitHub Codespaces at <https://github.com/> was used for code editing, running Visual Studio Code (Version 1.96.3).
 - Render: The web application is deployed on Render at <https://render.com/>.
 - CI Python Linter: Code formatting and adherence to PEP8 standards were ensured using the CI Python Linter at <https://pep8ci.herokuapp.com/>
 
