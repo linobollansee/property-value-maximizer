@@ -11,7 +11,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Business Requirements](#business-requirements)
 - [Agile Methodology](#agile-methodology)
 - [Hypotheses and Validation](#hypotheses-and-validation)
-- [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-ml-tasks)
+- [Rationale to map the business requirements to the Data Visualisations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 - [Business Case Understanding](#business-case-understanding)
 - [Cross-industry standard process for data mining](#cross-industry-standard-process-for-data-mining)
 - [Data Preprocessing](#data-preprocessing)
@@ -263,7 +263,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
   - For our third hypothesis, we investigate how a property's condition affects its sale price. We hypothesize that homes in excellent condition, particularly those that have undergone recent renovations or are newly built, will be more desirable to buyers and therefore will command higher sale prices. The condition of a property often reflects its upkeep and can signal to buyers the level of maintenance and care invested in the home. Properties in better condition are generally perceived as more move-in ready, which makes them more attractive to prospective buyers looking for immediate comfort without the need for costly repairs or improvements.
     - Hypothesis Confirmation: Our analysis supports this hypothesis by revealing a positive and moderate correlation between sale price and key factors such as the property's construction year and the year of its last remodel. The data suggests that newer homes and those with recent upgrades tend to sell at higher prices, highlighting the importance of property condition in the pricing process. The findings confirm that well-maintained homes or those with modern features are more likely to achieve higher sale prices, underscoring the influence of condition on market value.
 
-## Mapping Business Requirements to Data Visualizations and ML Tasks
+## Rationale to map the business requirements to the Data Visualisations and ML tasks
 
 - **Business Requirement 1: Data Visualization & Correlation Analysis**
   - Conduct a correlation study using Pearson and Spearman correlation coefficients to assess the relationship between house attributes and the target variable, house price.
