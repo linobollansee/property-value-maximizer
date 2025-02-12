@@ -446,7 +446,7 @@ These plots show the relationships between house prices and specific features, b
 ![Linear Model Price by MasVnr Area](docs/plots/lm_plot_price_by_MasVnrArea.png)
 
 *Linear Model of Price by Open Porch Area illustrates how open porch space affects price.*
-[Linear Model Price by Open Porch Area](docs/plots/lm_plot_price_by_OpenPorchSF.png)
+![Linear Model Price by Open Porch Area](docs/plots/lm_plot_price_by_OpenPorchSF.png)
 
 *Linear Model of Price by Total Basement Area highlights the impact of basement area on price.*
 ![Linear Model Price by Total Basement Area](docs/plots/lm_plot_price_by_TotalBsmtSF.png)
