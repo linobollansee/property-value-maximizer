@@ -414,11 +414,15 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 ### Correlation Analysis page
 
 - Correlation Analysis page
-  -
-  -
-  -
+  - Correlation Analysis: Focuses on examining the relationship between different house features and sale prices. The goal is to use data visualizations to highlight how these features impact pricing.
+  - Inspect house data from the dataset checkbox: If this box is checked, it loads the dataset as a DataFrame table. It can be downloaded as a CSV file, searched, or set to full screen.
+  - The analysis investigated factors affecting house sale prices, aiming to identify key variables influencing pricing trends. The correlation analysis highlighted the following variables most closely linked to sale prices: '1stFlrSF', 'GarageArea', 'GarageYrBlt', 'GrLivArea', 'KitchenQual_Ex', 'KitchenQual_TA', 'OverallQual', 'TotalBsmtSF', 'YearBuilt', and 'YearRemodAdd'.
+  - The analysis identified key factors affecting home values: larger homes with more features are more valuable, better condition and higher-quality materials increase value, and newly built or recently renovated homes tend to have higher market prices.
+  - Data Visualizations: Interactive plotly plots that can be downloaded as PNG, zoomed, panned, autoscaled, have its axes reset, and be viewed in fullscreen.
+    - Distribution of target variable checkbox: If this box is checked, it loads an interactive plotly histogram of the SalePrice.
+    - Show Correlations and PPS Heatmaps: If this box is checked, it loads three  interactive plotly heatmaps, two featuring spearman and pearson correlation heatmaps, and one featuring a predictive power score heatmap.
+    - Variables Plots - Visual Analysis: If this box is checked, it loads eight interactive plotly scatter plots, 1stFlrSF, GarageArea, GarageYrBlt, GrLivArea, OverallQual, TotalBsmtSF, YearBuilt, YearRemodAdd, all individually versus the SalePrice.
 
-- Correlation Analysis page
 ![correlation-analysis-readme](docs/readme-images/correlation-analysis-readme.png)
 
 
