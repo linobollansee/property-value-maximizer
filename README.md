@@ -20,6 +20,12 @@ The project is accessible at the following URL: <https://property-value-maximize
     - [Categorical encoding](#categorical-encoding)
     - [Numerical Transformations](#numerical-transformations)
 - [Dashboard Features](#dashboard-features)
+- [Plots](#plots)
+  - [Distribution and Correlation Plots](#distribution-and-correlation-plots)
+  - [Box Plots](#box-plots)
+  - [Line Plots](#line-plots)
+  - [Linear Model Plots](#linear-model-plots)
+  - [Performance and Feature Importance](#performance-and-feature-importance)
 - [Bugs and Fixes](#bugs-and-fixes)
 - [Project Testing](#project-testing)
 - [Deployment](#deployment)
@@ -386,6 +392,74 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 - Machine Learning Model page
 
+## Plots
+
+### Distribution and Correlation Plots
+These plots give insight into the distribution and relationships within the data.
+
+*Histogram of Sale Price to visualize its distribution.*
+![Histogram Sale Price](docs/plots/hist_plot_SalePrice.png)
+
+*Heatmap showing Pearson correlation between variables.*
+![Heatmap Corr Pearson](docs/plots/heatmap_corr_pearson.png)
+
+*Heatmap showing Spearman correlation between variables.*
+![Heatmap Corr Spearman](docs/plots/heatmap_corr_spearman.png)
+
+*Heatmap illustrating Partial Pairwise Correlations.*
+![Heatmap PPS](docs/plots/heatmap_pps.png)
+
+### Box Plots
+
+These box plots illustrate how various features impact house prices.
+
+*Box Plot of Price by Kitchen Quality shows price variation across kitchen quality levels.*
+![Box Plot Price by Kitchen Quality](docs/plots/box_plot_price_by_KitchenQual.png)
+
+*Box Plot of Price by Overall Quality visualizes price differences by overall house quality.*
+![Box Plot Price by Overall Quality](docs/plots/box_plot_price_by_OverallQual.png)
+
+### Line Plots
+
+These line plots depict trends in house prices over time and with building age.
+
+*Line Plot of Price by Year Built reveals trends in house prices over the years.*
+![Line Plot Price by Year Built](docs/plots/line_plot_price_by_YearBuilt.png)
+
+*Line Plot of Price by Year Remodeled shows how price changes with remodeling.*
+![Line Plot Price by Year Remodeled](docs/plots/line_plot_price_by_YearRemodAdd.png)
+
+### Linear Model Plots
+
+These plots show the relationships between house prices and specific features, based on linear regression.
+
+*Linear Model of Price by 1st Floor Area demonstrates the impact of floor space on price.*
+![Linear Model Price by 1st Floor Area](docs/plots/lm_plot_price_by_1stFlrSF.png)
+
+*Linear Model of Price by Garage Area illustrates the influence of garage size on house prices.*
+- ![Linear Model Price by Garage Area](docs/plots/lm_plot_price_by_GarageArea.png)
+
+*Linear Model of Price by GrLiv Area visualizes the effect of the ground living area on prices.*
+![Linear Model Price by GrLiv Area](docs/plots/lm_plot_price_by_GrLivArea.png)
+
+*Linear Model of Price by MasVnr Area shows the relationship between masonry veneer area and price.*
+![Linear Model Price by MasVnr Area](docs/plots/lm_plot_price_by_MasVnrArea.png)
+
+*Linear Model of Price by Open Porch Area illustrates how open porch space affects price.*
+[Linear Model Price by Open Porch Area](docs/plots/lm_plot_price_by_OpenPorchSF.png)
+
+*Linear Model of Price by Total Basement Area highlights the impact of basement area on price.*
+![Linear Model Price by Total Basement Area](docs/plots/lm_plot_price_by_TotalBsmtSF.png)
+
+### Performance and Feature Importance
+
+These plots help evaluate model performance and highlight the most important features.
+
+*Feature Importance Plot identifies the most influential features for house price prediction.*
+![Features Importance](docs/plots/features_importance.png)
+
+*Regression Performance Plot shows the effectiveness of the regression model.*
+![Regression Performance](docs/plots/regression_performance.png)
 
 ## Bugs and Fixes
 
