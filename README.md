@@ -424,17 +424,18 @@ Categorical encoding was applied to convert ordinal categories into numerical va
   - Data Visualizations: Interactive plotly plots that can be downloaded as PNG, zoomed, panned, autoscaled, have its axes reset, and be viewed in fullscreen.
     - Distribution of target variable checkbox: If this box is checked, it loads an interactive plotly histogram of the SalePrice.
     - Show Correlations and PPS Heatmaps: If this box is checked, it loads three  interactive plotly heatmaps, two featuring spearman and pearson correlation heatmaps, and one featuring a predictive power score heatmap.
-    - Variables Plots - Visual Analysis: If this box is checked, it loads eight interactive plotly scatter plots, 1stFlrSF, GarageArea, GarageYrBlt, GrLivArea, OverallQual, TotalBsmtSF, YearBuilt, YearRemodAdd, all individually versus the SalePrice.
+    - Variables Plots - Visual Analysis: If this box is checked, it loads eight interactive plotly scatter plots, 1stFlrSF, GarageArea, GarageYrBlt, GrLivArea, OverallQual, TotalBsmtSF, YearBuilt, YearRemodAdd, all individually plotted versus the SalePrice.
 
 ![correlation-analysis-readme](docs/readme-images/correlation-analysis-readme.png)
-
 
 ### Sale Price Prediction page
 
 - Sale Price Prediction page
-  - 
-  -
-  -
+  - Inherited Houses (Filtered Data for Prediction) are displayed in a DataFrame table with the most important house features for price prediction.
+  - The Predicted Sale Prices for Inherited Houses are displayed in a DataFrame table with the most important house features for price prediction.
+  - A Total Predicted Sale Price for All Inherited Houses is displayed: 💲632,680.27
+  - Predict Sales Price for Your Own House can be set with 5 number input widgets and calculated with a Calculate House price widget button.
+  - A "SUCCESSFULLY CALCULATED" message appears along with the Price for Your Own House, which depends on your input values.
 
 ![sale-price-prediction-readme](docs/readme-images/sale-price-prediction-readme.png)
 
