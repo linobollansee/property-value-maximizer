@@ -147,7 +147,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Model Training, Optimization, and Validation Epic**
 
-  - User Story 3.1: Model Performance Evaluation - Business Requirement 1 & 2
+  - User Story 3.1: Model Performance Evaluation - Business Requirement 2
     - As a developer, I want to evaluate the performance of the predictive model so that I can ensure the reliability and accuracy of its predictions.
       - Acceptance Criteria:
         - The predictive model must be evaluated to ensure reliability and accuracy of its predictions.
@@ -176,7 +176,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         -  A Streamlit multi-page application with a sidebar was created to allow the client to quickly gain an overview of the project.
 
-  - User Story 4.2: Data Visualization for Insights - Business Requirement 2
+  - User Story 4.2: Data Visualization for Insights - Business Requirement 1
     - As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
       - Acceptance Criteria:
         - The client should be able to view data visualizations that illustrate the relationship between the target variable.
@@ -185,7 +185,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         - A correlation analysis streamlit page was created that shows data visualizations that illustrate the relationship between the target variable and its key features.
 
-  - User Story 4.3: Correlation Analysis View - Business Requirement 2
+  - User Story 4.3: Correlation Analysis View - Business Requirement 1
     - As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
       - Acceptance Criteria:
         - The correlation analysis page has to be accessible through the Streamlit sidebar.
