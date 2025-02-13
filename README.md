@@ -181,9 +181,9 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - Acceptance Criteria:
         - The client should be able to view data visualizations that illustrate the relationship between the target variable.
       - Tasks:
-        - Create a streamlit page that shows data visualizations that illustrate the relationship between the target variable.
+        - Create a streamlit page that shows data visualizations that illustrate the relationship between the target variable and its key features.
       - How they were completed:
-        - A correlation analysis streamlit page was created that shows data visualizations that illustrate the relationship between the target variable.
+        - A correlation analysis streamlit page was created that shows data visualizations that illustrate the relationship between the target variable and its key features.
 
   - User Story 4.3: Correlation Analysis View
     - As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
