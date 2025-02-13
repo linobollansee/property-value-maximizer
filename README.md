@@ -101,6 +101,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 - **Dashboard Deployment and Release Epic**
 
 ### User Stories
+
 - **Data Collection and Information Gathering Epic**
 
   - User Story 1.1: Install Required Dependencies and Packages
@@ -157,11 +158,12 @@ To meet these business requirements, Epics and User Stories have been defined. T
   - User Story 3.2: Individual Prediction Testing
     - As a developer, I want to test individual data points against the model’s predictions so that I can determine the target variable based on my provided features.
       - Acceptance Criteria:
-        - 
+        - Individual data points must be tested against the model's predictions to determine the target variable.
       - Tasks:
-        - 
+        - Test individual data points against the model's predictions to determine the target variable.
       - How they were completed:
-        - 
+        - Plots were generated that measure Actual vs Prediction for both train and test sets.
+
 - **Dashboard Planning, Design, and Development Epic**
 
   - User Story 4.1: Streamlit Landing Page Access
@@ -171,7 +173,8 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - Tasks:
         - Create a streamlit landing page that allows the client to quickly gain an overview of the project.
       - How they were completed:
-        -  A Streamlit multi-page application with a sidebar was created to allow the client to quickly gain an overview of the project. 
+        -  A Streamlit multi-page application with a sidebar was created to allow the client to quickly gain an overview of the project.
+
   - User Story 4.2: Data Visualization for Insights
     - As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
       - Acceptance Criteria:
@@ -180,7 +183,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - Create a streamlit page that shows data visualizations that illustrate the relationship between the target variable.
       - How they were completed:
         - A correlation analysis streamlit page was created that shows data visualizations that illustrate the relationship between the target variable.
-  
+
   - User Story 4.3: Correlation Analysis View
     - As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
       - Acceptance Criteria:
@@ -192,9 +195,10 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - Create a heatmap or visual representation of the correlations between features and the target variable.
         - Create a page that allows the client to interact with the heatmaps.
       - How they were completed:
-        - The correlation analysis page was created and made accesible through the Streamlit sidebar by adding its body function `correlation_analysis_body()` to `app.py`
+        - The correlation analysis page was created and made accesible through the Streamlit sidebar by adding its body function `correlation_analysis_body()` to `app.py`.
         - The visual representations were created with `px.histogram` for histograms, `px.imshow` for heatmaps, and `px.scatter` for scatter plots.
         - The heatmaps were plotted on the page with Plotly which has built-in interactivity.
+
   - User Story 4.4: Key Features for Sale Price Prediction
     - As a client, I want to identify the key attributes of a house that have the strongest correlation with its potential sale price so that I can make data-driven pricing decisions.
       - Acceptance Criteria: 
@@ -203,7 +207,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - Perform pearson and spearman correlation analysis to find the relationship between different features and the sale price.
       - How they were completed:
         - The code `df.corr(method="pearson")` was used to calculate pearson correlation, and `df.corr(method="spearman")` to calculate spearman correlation on the DataFrame.
-  
+
   - User Story 4.5: Interactive Prediction Input
     - As a client, I want interactive input fields that allow me to enter custom data so that I can generate personalized predictions for the target variable.
       - Acceptance Criteria:
@@ -215,7 +219,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         - Streamlit widgets were created with `st.number_input` to allow the user to enter values for each feature or variable that influences the prediction.
         - Input widgets were given a defined `min_value` and `max_value` to ensure the input is within a realistic range.
-  
+
   - User Story 4.6: Accurate Sale Price Prediction
     - As a client, I want the most accurate possible prediction of the sale prices for the inherited properties so that I can maximize the financial returns from selling the four houses.
       - Acceptance Criteria:
@@ -247,14 +251,14 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - The environment variables must be configured correctly for deployment.
         - Deployment is automated with auto-deploy.   
       - Tasks:
-        - Deploy the application to Render
-        - Define the necessary build and start commands in Render settings
+        - Deploy the application to Render.
+        - Define the necessary build and start commands in Render settings.
         - Configure environment variables required for deployment.
         - Enable auto-deploy from the connected repository. 
       - How they were completed:
-        - A new Web Service was created on Render
-        - The build command was set to `pip install -r requirements.txt && ./setup.sh` and the start command to `streamlit run app.py`
-        - Environment variables were set to `PORT` `Value: 8501` and `PYTHON_VERSION` `Value: 3.12.1`
+        - A new Web Service was created on Render.
+        - The build command was set to `pip install -r requirements.txt && ./setup.sh` and the start command to `streamlit run app.py`.
+        - Environment variables were set to `PORT` `Value: 8501` and `PYTHON_VERSION` `Value: 3.12.1`.
         - Auto-deploy settings were set to Yes.
 
 ## Hypothesis and how to validate hypothesis
