@@ -565,7 +565,13 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 
 ## Project Testing
 
-- Test checkboxes in the streamlit app
+- Widget Input Testing
+
+  - The OverallQual widget only accepts values within the range of 1 to 10. Any manual input within this range is allowed, while values outside this boundary trigger a warning message for the user.
+
+  - Widget values for continuous features can be modified using the +/- buttons or entered manually. For categorical features with an ordinal nature (e.g., "OverallQual"), users can also either input values manually or adjust them using the +/- controls.
+
+  - To ensure the accuracy of widget calculations, all of the 5 Predicted Sale Prices for Inherited Houses were checked by inputting the values of their features exactly. This step confirmed that the widget-driven calculations aligned with the regression model used to determine the dollar value of the inherited properties.
 
 ## Deployment
 
