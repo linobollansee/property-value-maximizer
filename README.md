@@ -679,7 +679,7 @@ The Code Institute code is available here:
 - Walkthrough projects at <https://github.com/Code-Institute-Solutions/WalkthroughProject01> and <https://github.com/Code-Institute-Solutions/churnometer>
 - Template: <https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues>
 
-The flow of the code in this project's Jupyter Notebooks, streamlit application, and README file was based on Werner Stäblein's repository available at <https://github.com/Werner-Staeblein/Project-5>
+The structure and flow of the code in this project's Jupyter Notebooks, Streamlit application, and README file were initially inspired by Werner Stäblein's repository at <https://github.com/Werner-Staeblein/Project-5>. However, numerous enhancements and new features have been incorporated to differentiate my work.
 
 ### Media
 
