@@ -572,6 +572,82 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 
 ## Project Testing
 
+### Manual Testing
+
+#### User Story Testing
+
+- User Story 1.1: Install Required Dependencies and Packages - Business Requirement 1 & 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| Verify installation of Python Dependancies and Packages | Type `pip list` in the terminal | All installed packages are displayed in the terminal | PASSED |
+
+- User Story 1.2: Import Relevant Data into Jupyter Notebook - Business Requirement 1 & 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| Verify importation of Relevant Data into Jupyter Notebook | The `df.info()` method can verify the content of the imported data | Provides a summary of the DataFrame's structure | PASSED |
+
+User Story 2.1: Data Cleaning and Quality Assurance - Business Requirement 1
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| Verify Data Cleaning | The expression `.isnull().sum()` is used to check for missing (null) values after Data Cleaning | No missing values | PASSED |
+
+User Story 3.1: Model Performance Evaluation - Business Requirement 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| Evaluate Model Performance | Key metrics were evaluated using expressions such as: `print('R2 Score:', round(r2_score(y, prediction), 3))` etc. | An R2 score of at least 0.75 on the train set and test set was measured | PASSED |
+
+User Story 4.1: Streamlit Landing Page Access - Business Requirement 1 & 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| Access the Streamlit Landing Page | Type `streamlit run app.py` in the terminal and click Open in Browser | Landing Page opens | PASSED |
+
+User Story 4.2: Data Visualization for Insights - Business Requirement 1
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+User Story 4.3: Correlation Analysis View - Business Requirement 1
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+User Story 4.4: Key Features for Sale Price Prediction - Business Requirement 1
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+User Story 4.5: Interactive Prediction Input - Business Requirement 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+User Story 4.6: Accurate Sale Price Prediction - Business Requirement 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+User Story 4.7: Predictive Model Dashboard - Business Requirement 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+User Story 5.1: Early Deployment on Render - Business Requirement 1 & 2
+
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
 - Widget Input Testing
 
   - The OverallQual widget only accepts values within the range of 1 to 10. Any manual input within this range is allowed, while values outside this boundary trigger a warning message for the user.
