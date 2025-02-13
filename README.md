@@ -143,7 +143,8 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - The expression `df.isnull()` or `df.isna()` returns missing values.
         - the expression `ProfileReport(df=df, minimal=True)` generates an automated exploratory data analysis (EDA) report.
         - A custom function called `DataCleaningEffect()` visualizes the effects of cleaning.
-        - 
+        - The class instantiations `MeanMedianImputer(imputation_method='mean')` and `MeanMedianImputer(imputation_method='median')` were created, followed by the fit_transform() method.
+
 - **Model Training, Optimization, and Validation Epic**
 
   - User Story 3.1: Model Performance Evaluation
