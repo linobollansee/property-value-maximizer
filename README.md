@@ -104,7 +104,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Data Collection and Information Gathering Epic**
 
-  - User Story 1.1: Install Required Dependencies and Packages
+  - User Story 1.1: Install Required Dependencies and Packages - Business Requirement 1
     - As a developer, I need to install all required dependencies and packages so that I can effectively utilize the necessary tools for project implementation.
       - Acceptance Criteria:
         - All dependencies are installed successfully without errors.
@@ -113,7 +113,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         - The command `pip install -r requirements.txt` was typed in the IDE terminal.
 
-  - User Story 1.2: Import Relevant Data into Jupyter Notebook
+  - User Story 1.2: Import Relevant Data into Jupyter Notebook - Business Requirement 1 & 2
     - As a developer, I need to import relevant data into a Jupyter Notebook so that I can conduct a thorough analysis of the dataset.
       - Acceptance Criteria:
         - The housing dataset is successfully downloaded from Kaggle.
@@ -127,7 +127,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Data Visualization, Cleaning, and Preparation Epic**
 
-  - User Story 2.1: Data Cleaning and Quality Assurance
+  - User Story 2.1: Data Cleaning and Quality Assurance - Business Requirement 1
     - As a developer, I want to implement a robust data cleaning process so that I can ensure the dataset is accurate, reliable, and of high quality.
       - Acceptance Criteria:
         - All missing or null values in the dataset must be identified.
@@ -147,7 +147,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Model Training, Optimization, and Validation Epic**
 
-  - User Story 3.1: Model Performance Evaluation
+  - User Story 3.1: Model Performance Evaluation - Business Requirement 1 & 2
     - As a developer, I want to evaluate the performance of the predictive model so that I can ensure the reliability and accuracy of its predictions.
       - Acceptance Criteria:
         - The predictive model must be evaluated to ensure reliability and accuracy of its predictions.
@@ -156,7 +156,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         - An R2 score of at least 0.75 on the train set and test set was measured.
 
-  - User Story 3.2: Individual Prediction Testing
+  - User Story 3.2: Individual Prediction Testing - Business Requirement 2
     - As a developer, I want to test individual data points against the model’s predictions so that I can determine the target variable based on my provided features.
       - Acceptance Criteria:
         - Individual data points must be tested against the model's predictions to determine the target variable.
@@ -167,7 +167,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Dashboard Planning, Design, and Development Epic**
 
-  - User Story 4.1: Streamlit Landing Page Access
+  - User Story 4.1: Streamlit Landing Page Access - Business Requirement 2
     - As a client, I want to access the Streamlit landing page so that I can quickly gain an overview of the project.
       - Acceptance Criteria:
         - The client should be able to quickly gain an overview of the project through the Streamlit landing page.
@@ -176,7 +176,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         -  A Streamlit multi-page application with a sidebar was created to allow the client to quickly gain an overview of the project.
 
-  - User Story 4.2: Data Visualization for Insights
+  - User Story 4.2: Data Visualization for Insights - Business Requirement 2
     - As a client, I want to view data visualizations that illustrate the relationship between the target variable and its key features so that I can gain deeper insights from the data.
       - Acceptance Criteria:
         - The client should be able to view data visualizations that illustrate the relationship between the target variable.
@@ -185,7 +185,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         - A correlation analysis streamlit page was created that shows data visualizations that illustrate the relationship between the target variable and its key features.
 
-  - User Story 4.3: Correlation Analysis View
+  - User Story 4.3: Correlation Analysis View - Business Requirement 2
     - As a client, I want to view a correlation analysis page on Streamlit so that I can understand the relationships between various features and the target variable.
       - Acceptance Criteria:
         - The correlation analysis page has to be accessible through the Streamlit sidebar.
@@ -200,7 +200,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - The visual representations were created with `px.histogram` for histograms, `px.imshow` for heatmaps, and `px.scatter` for scatter plots.
         - The heatmaps were plotted on the page with Plotly which has built-in interactivity.
 
-  - User Story 4.4: Key Features for Sale Price Prediction
+  - User Story 4.4: Key Features for Sale Price Prediction - Business Requirement 1
     - As a client, I want to identify the key attributes of a house that have the strongest correlation with its potential sale price so that I can make data-driven pricing decisions.
       - Acceptance Criteria: 
         - The client should be able to identify the key attributes of a house that have the strongest correlation with its potential sale price.
@@ -209,7 +209,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         - The code `df.corr(method="pearson")` was used to calculate pearson correlation, and `df.corr(method="spearman")` to calculate spearman correlation on the DataFrame.
 
-  - User Story 4.5: Interactive Prediction Input
+  - User Story 4.5: Interactive Prediction Input - Business Requirement 2
     - As a client, I want interactive input fields that allow me to enter custom data so that I can generate personalized predictions for the target variable.
       - Acceptance Criteria:
         - The input fields should allow the user to enter values for each feature or variable that influences the prediction.
@@ -221,7 +221,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
         - Streamlit widgets were created with `st.number_input` to allow the user to enter values for each feature or variable that influences the prediction.
         - Input widgets were given a defined `min_value` and `max_value` to ensure the input is within a realistic range.
 
-  - User Story 4.6: Accurate Sale Price Prediction
+  - User Story 4.6: Accurate Sale Price Prediction - Business Requirement 2
     - As a client, I want the most accurate possible prediction of the sale prices for the inherited properties so that I can maximize the financial returns from selling the four houses.
       - Acceptance Criteria:
         - The sale prices of the inherited properties must be accurately predicted.
@@ -230,7 +230,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - How they were completed:
         - A machine learning regression model was used to accurately predict the price of the inherited properties.
 
-  - User Story 4.7: Predictive Model Dashboard
+  - User Story 4.7: Predictive Model Dashboard - Business Requirement 2
     - As a developer, I need to create a dashboard to effectively visualize and communicate the results of the model's predictions.
       - Acceptance Criteria:
         - A streamlit dashboard must be created.
@@ -244,7 +244,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Dashboard Deployment and Release Epic**
 
-  - User Story 5.1: Early Deployment on Render
+  - User Story 5.1: Early Deployment on Render - Business Requirement 1 & 2
     - As a developer, I want to initiate the deployment process of my application on Render at an early stage so that I can conduct end-to-end manual deployment testing from the outset.
       - Acceptance Criteria:
         - The application must be successfully deployed to Render.
