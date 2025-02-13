@@ -448,9 +448,10 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 ### Hypothesis Validation page
 
 - Hypothesis Validation page
-  -
-  -
-  -
+  - This page outlines and validates three hypotheses related to property sale prices using `st.success`.
+    - Larger properties sell for higher prices – confirmed.
+    - Higher property quality leads to higher sale prices – confirmed.
+    - Better property condition (newer or renovated) results in higher sale prices – confirmed.
 
 - Hypothesis Validation page
 ![hypothesis-validation-readme](docs/readme-images/hypothesis-validation-readme.png)
@@ -458,9 +459,14 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 ### Machine Learning Model page
 
 - Machine Learning Model page
-  -
-  -
-  -
+  - A model was developed and optimized to predict property sales prices with a focus on achieving a specific level of accuracy.
+  - The best model's pipeline performance was evaluated on both the train and test sets, showing strong results.
+  - The pipeline steps, key features, feature importance, performance, and regression results are presented below.
+  - The pipeline consists of several steps, including imputation, transformation, scaling, and modeling, with the final model being an ExtraTreesRegressor.
+  - The model was trained using the following features, with their importance ranking as indicated: `OverallQual`, `GrLivArea`, `GarageArea`, `YearBuilt,`TotalBsmtSF`
+  - Feature importance is plotted.
+  - The pipeline successfully met the performance goals of an R2 score of at least 0.75 for both the train and test sets. The model evaluation on the train set shows strong performance across several metrics.
+  - The regression performance plots show that the model effectively predicts sale prices, although its reliability decreases for higher-priced houses.
 
 - Machine Learning Model page
 ![machine-learning-model-readme](docs/readme-images/machine-learning-model-readme.png)
