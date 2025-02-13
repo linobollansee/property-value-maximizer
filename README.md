@@ -104,7 +104,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Data Collection and Information Gathering Epic**
 
-  - User Story 1.1: Install Required Dependencies and Packages - Business Requirement 1
+  - User Story 1.1: Install Required Dependencies and Packages - Business Requirement 1 & 2
     - As a developer, I need to install all required dependencies and packages so that I can effectively utilize the necessary tools for project implementation.
       - Acceptance Criteria:
         - All dependencies are installed successfully without errors.
