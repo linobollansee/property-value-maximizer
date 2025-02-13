@@ -550,6 +550,8 @@ ModuleNotFoundError: No module named 'pkg_resources'
 
 This bug was fixed by adding `setuptools==75.8.0` to `requirements.txt`, as it is now necessary to have `setuptools` installed to use `ppscore` with current Python versions.
 
+Many are unaware of this very simple solution that took me weeks to find, and instead revert to older Python versions, often facing new package dependency conflicts, package availability problems, incompatible pickle files, and other deployment issues.
+
 - During the hyperparameter optimization search, an extreme amount of FutureWarnings cluttered the output cell. It prevented the Jupyter Notebook from being managable:
 ![future-warning-bug](docs/readme-images/future-warning-bug-readme.png)
 
