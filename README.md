@@ -111,7 +111,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
       - Tasks:
         - Install all required dependencies using the PIP package manager.
       - How they were completed:
-        - The command `pip install -r requirements` was typed in the IDE terminal.
+        - The command `pip install -r requirements.txt` was typed in the IDE terminal.
 
   - User Story 1.2: Import Relevant Data into Jupyter Notebook
     - As a developer, I need to import relevant data into a Jupyter Notebook so that I can conduct a thorough analysis of the dataset.
