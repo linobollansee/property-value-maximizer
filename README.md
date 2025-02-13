@@ -14,7 +14,7 @@ The project is accessible at the following URL: <https://property-value-maximize
   - [User stories](#user-Stories)
 - [Hypothesis and how to validate hypothesis](#hypothesis-and-how-to-validate-hypothesis)
 - [Rationale to map the business requirements to the Data Visualisations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
-- [Business Case Understanding](#business-case-understanding)
+- [ML Business Case](#ml-business-case)
 - [Cross-industry standard process for data mining](#cross-industry-standard-process-for-data-mining)
 - [Data Preprocessing](#data-preprocessing)
   - [Data Cleaning Pipeline](#data-cleaning-pipeline)
@@ -293,7 +293,14 @@ To meet these business requirements, Epics and User Stories have been defined. T
   - The goal is to predict house prices using key features: `OverallQual`, `GrLivArea`, `GarageArea`, `YearBuilt`, `TotalBsmtSF`
   - This analysis is detailed in the following notebook: <https://github.com/linobollansee/property-value-maximizer/blob/main/jupyter_notebooks/05%20-%20MLModelEvaluation.ipynb>
   
-## Business Case Understanding
+## ML Business Case
+
+- **Business Requirements**
+Business Requirement 1:
+The client wants to understand how different house attributes correlate with sale prices. They expect data visualizations that illustrate the relationships between key features and sale prices.
+
+Business Requirement 2:
+The client wishes to predict the sale prices of four inherited houses. Additionally, they want to forecast the sale prices of other properties in Ames, Iowa.
 
 - **Objective**  
 We want an ML model to predict the sale prices of houses based on their various attributes, using publicly available data, specifically in Ames, Iowa.
