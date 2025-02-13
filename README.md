@@ -167,7 +167,7 @@ To meet these business requirements, Epics and User Stories have been defined. T
 
 - **Dashboard Planning, Design, and Development Epic**
 
-  - User Story 4.1: Streamlit Landing Page Access - Business Requirement 2
+  - User Story 4.1: Streamlit Landing Page Access - Business Requirement 1 & 2
     - As a client, I want to access the Streamlit landing page so that I can quickly gain an overview of the project.
       - Acceptance Criteria:
         - The client should be able to quickly gain an overview of the project through the Streamlit landing page.
