@@ -587,7 +587,7 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 - GitHub Codespaces: The cloud-based integrated development environment (IDE) GitHub Codespaces at <https://github.com/> was used for code editing, running Visual Studio Code (Version 1.96.3).
 - Render: The web application is deployed on Render at <https://render.com/>.
 - CI Python Linter: Code formatting and adherence to PEP8 standards were ensured using the CI Python Linter at <https://pep8ci.herokuapp.com/>
-
+- GoFullPage: A browser extension available at <https://gofullpage.com/>for capturing full-page screenshots in Google Chrome and Microsoft Edge. It allows users to take scrolling screenshots of entire webpages without needing to stitch multiple images together manually.
 
 ## Python Packages
 
