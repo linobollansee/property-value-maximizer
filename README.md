@@ -665,31 +665,33 @@ src/machine_learning/predictive_analysis_functions.py
 
 ## Python Packages
 
-- Data Processing & Feature Engineering
-  - feature-engine: A library for feature engineering in machine learning pipelines, offering transformations like encoding, imputation, and scaling.
-  - pandas: A fundamental library for data manipulation and analysis using DataFrames and Series.
-  - numpy: Provides support for numerical operations, arrays, and mathematical functions.
+- **Data Processing & Feature Engineering**
+  - `feature-engine==1.6.1`: A library for feature engineering in machine learning pipelines, offering transformations like encoding, imputation, and scaling.
+  - `pandas==2.1.1`: A fundamental library for data manipulation and analysis using DataFrames and Series.
+  - `numpy==1.26.1`: Provides support for numerical operations, arrays, and mathematical functions.
 
-- Data Visualization
-  - matplotlib: A widely used library for static, animated, and interactive visualizations.
-  - seaborn: Built on top of Matplotlib, it simplifies statistical data visualization.
-  - plotly: Enables interactive plots, dashboards, and web-based visualizations.
+- **Data Visualization**
+  - `matplotlib==3.8.0`: A widely used library for static, animated, and interactive visualizations.
+  - `seaborn==0.13.2`: Built on top of Matplotlib, it simplifies statistical data visualization.
+  - `plotly==5.17.0`: Enables interactive plots, dashboards, and web-based visualizations.
 
-- Machine Learning & Model Evaluation
-  - joblib: Enables efficient model serialization, parallel computing, and caching for machine learning workflows.
-  - scikit-learn: A popular ML library offering tools for classification, regression, clustering, and preprocessing.
-  - xgboost: An optimized gradient boosting framework widely used for structured data ML tasks.
+- **Machine Learning & Model Evaluation**
+  - `joblib==1.4.2`: Enables efficient model serialization, parallel computing, and caching for machine learning workflows.
+  - `scikit-learn==1.3.1`: A popular ML library offering tools for classification, regression, clustering, and preprocessing.
+  - `xgboost==1.7.6`: An optimized gradient boosting framework widely used for structured data ML tasks.
 
-- Data Profiling & Exploratory Analysis
-  - ppscore: Calculates predictive power scores to determine relationships between variables.
-  - ydata-profiling: Generates detailed EDA reports, summarizing data characteristics, correlations, and missing values.
+- **Data Profiling & Exploratory Analysis**
+  - `ppscore==1.1.0`: Calculates predictive power scores to determine relationships between variables.
+  - `ydata-profiling==4.12.0`: Generates detailed EDA reports, summarizing data characteristics, correlations, and missing values.
 
-- Web Applications & Image Processing
-  - streamlit: A framework for building interactive ML and data science web apps with minimal code.
+- **Web Applications & Image Processing**
+  - `streamlit==1.40.2`: A framework for building interactive ML and data science web apps with minimal code.
 
-- Others
-  - kaggle: A library for accessing and managing Kaggle datasets via the Kaggle API.
-  - setuptools: A package development and distribution tool, ensuring dependencies are managed properly.
+- **Others**
+  - `kaggle==1.5.12`: A library for accessing and managing Kaggle datasets via the Kaggle API.
+  - `setuptools==75.8.0`: A package development and distribution tool, ensuring dependencies are managed properly.
+  - `imbalanced-learn==0.11.0`: A library for handling imbalanced datasets by providing various resampling techniques.
+
 
 ## Credits
 
