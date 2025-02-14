@@ -299,27 +299,32 @@ To meet these business requirements, Epics and User Stories have been defined. T
 ## ML Business Case
 
 - **Business Requirements**
+
 Business Requirement 1:
 The client wants to understand how different house attributes correlate with sale prices. They expect data visualizations that illustrate the relationships between key features and sale prices.
 
 Business Requirement 2:
 The client wishes to predict the sale prices of four inherited houses. Additionally, they want to forecast the sale prices of other properties in Ames, Iowa.
 
-- **Objective**  
+- **Objective**
+
 We want an ML model to predict the sale prices of houses based on their various attributes, using publicly available data, specifically in Ames, Iowa.
 
-- **Ideal Outcome**  
+- **Ideal Outcome**
+
 Our ideal outcome is to deliver an interactive dashboard that not only allows the client to visualize the correlation between house features and sale prices but also predicts the sale price for each house, including the inherited ones.
 
-- **Success Metrics**  
+- **Success Metrics**
+
 The model success metrics are:
   - Achieving an **R² score** of at least 0.75 on both the training and test datasets, indicating that the model can reliably predict sale prices.
   - Providing actionable insights through **clear visualizations** of the features most strongly correlated with the sale price.
 
-- **Model Output**  
+- **Model Output**
+
 The model output is the **predicted sale price** of a house, expressed in USD as a continuous numeric value.
 
-- **Heuristics**  
+- **Heuristics**
   - **Property Size**: We hypothesize that larger properties tend to command higher absolute sale prices. Features like **1stFlrSF**, **GrLivArea**, **LotArea**, and **TotalBsmtSF** are expected to have a positive correlation with sale price, as larger homes typically offer more utility and are more attractive to buyers.
   - **Overall Quality**: The overall quality of the house plays a significant role in its market value. Higher quality ratings such as **OverallQual** are expected to have a strong positive correlation with sale prices, as higher quality homes are more desirable due to better materials and craftsmanship.
   - **Property Condition**: The condition of a house, including factors such as age and renovations, is expected to influence the sale price. We hypothesize that newer homes or those with recent updates, indicated by features like **YearBuilt** and **YearRemodAdd**, will have a higher market value. A good condition rating (**OverallCond**) should also correlate positively with higher sale prices.
