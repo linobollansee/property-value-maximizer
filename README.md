@@ -491,6 +491,13 @@ Categorical encoding was applied to convert ordinal categories into numerical va
   - The model was trained using the following features, with their importance ranking as indicated: `OverallQual`, `GrLivArea`, `GarageArea`, `YearBuilt,`TotalBsmtSF`
   - Feature importance is plotted.
   - The pipeline successfully met the performance goals of an R2 score of at least 0.75 for both the train and test sets. The model evaluation on the train set shows strong performance across several metrics.
+  - Mean Absolute Error (MAE): Measures the average absolute difference between predicted and actual values. Lower is better.
+  - R² Score: Indicates how well the model explains the variance in the data. Higher (closer to 1) is better.
+  - Mean Squared Error (MSE): Measures the average squared difference between predictions and actual values. Lower is better, but it penalizes larger errors more heavily.
+  - Root Mean Squared Error (RMSE): The square root of MSE, giving error in the same unit as the target variable. Lower is better.
+  - Mean Absolute Percentage Error (MAPE): Measures prediction accuracy as a percentage of the actual values. Lower is better, but problematic with small values.
+  - Explained Variance Score (EVS): Measures how much of the variance in the data is explained by the model. Closer to 1 is better.
+  - Median Absolute Error (MedAE): The median of absolute errors. Robust to outliers, and smaller values are better.
   - The regression performance plots show that the model effectively predicts sale prices, although its reliability decreases for higher-priced houses.
 
 - Machine Learning Model page
