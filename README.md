@@ -582,7 +582,7 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 | 1.2 | Run `pd.read_csv('data.csv')` in Jupyter | Dataset loads without errors | Successful |
 | 2.1 | Run `df.isnull().sum()` and `ProfileReport(df)` | Missing values identified, profile report generated | Successful |
 | 3.1 | Train model and evaluate using `r2_score(y_test, y_pred)` | R2 score ≥ 0.75 for train/test sets | Successful |
-| 3.2 | Generate plots with `plt.scatter(y_test, y_pred)` | Actual vs Prediction plots displayed | Successful |
+| 3.2 | Generate plots with `sns.scatterplot(x=y_train, y=pred_train)` | Actual vs Prediction plots displayed | Successful |
 | 4.1 | Open Streamlit app and navigate to home page | Project overview is displayed | Successful |
 | 4.2 | View visualizations in Streamlit | Data insights are correctly visualized | Successful |
 | 4.3 | Open correlation analysis page in Streamlit | Interactive heatmap is displayed | Successful |
