@@ -36,6 +36,8 @@ The project is accessible at the following URL: <https://property-value-maximize
   - [Performance and Feature Importance](#performance-and-feature-importance)
 - [Bugs and Fixes](#bugs-and-fixes)
 - [Project Testing](#project-testing)
+  - [User Story Testing](#user-story-testing)
+  - [### Widget Testing](#widget-testing)
 - [Deployment](#deployment)
 - [Technologies](#technologies)
 - [Python Packages](#python-packages)
@@ -572,9 +574,7 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 
 ## Project Testing
 
-### Manual Testing
-
-#### User Story Testing
+### User Story Testing
 
 | User Story | Action | Expected Result | Result |
 |---|---|---|---|
@@ -592,13 +592,13 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 | 4.7 | Open predictive model dashboard in Streamlit | Model results are visualized correctly | Successful |
 | 5.1 | Deploy app on Render and check live URL | Application deploys and runs correctly | Successful |
 
-- Widget Input Testing
+### Widget Testing
 
-  - The OverallQual widget only accepts values within the range of 1 to 10. Any manual input within this range is allowed, while values outside this boundary trigger a warning message for the user.
-
-  - Widget values for continuous features can be modified using the +/- buttons or entered manually. For categorical features with an ordinal nature (e.g., "OverallQual"), users can also either input values manually or adjust them using the +/- controls.
-
-  - To ensure the accuracy of widget calculations, all of the 5 Predicted Sale Prices for Inherited Houses were checked by inputting the values of their features exactly. This step confirmed that the widget-driven calculations aligned with the regression model used to determine the dollar value of the inherited properties.
+| Test | Action | Expected Result | Result |
+| --- | --- | --- | --- |
+| Widget Range Validation | Input values 1-10 in OverallQual widget and attempt invalid input | Valid inputs accepted, invalid inputs trigger warning | Successful |
+| Widget Input Methods | Modify widget values using +/- buttons or manual entry | Values update correctly for both methods | Successful |
+| Prediction Accuracy Validation | Input inherited house values and compare predictions | Widget predictions match regression model output | Successful |
 
 ## Deployment
 
