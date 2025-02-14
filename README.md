@@ -37,7 +37,8 @@ The project is accessible at the following URL: <https://property-value-maximize
 - [Bugs and Fixes](#bugs-and-fixes)
 - [Project Testing](#project-testing)
   - [User Story Testing](#user-story-testing)
-  - [### Widget Testing](#widget-testing)
+  - [Widget Testing](#widget-testing)
+  - [PEP 8](#pep-8)
 - [Deployment](#deployment)
 - [Technologies](#technologies)
 - [Python Packages](#python-packages)
@@ -599,6 +600,24 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 | Widget Range Validation | Input values 1-10 in OverallQual widget and attempt invalid input | Valid inputs accepted, invalid inputs trigger warning | Successful |
 | Widget Input Methods | Modify widget values using +/- buttons or manual entry | Values update correctly for both methods | Successful |
 | Prediction Accuracy Validation | Input inherited house values and compare predictions | Widget predictions match regression model output | Successful |
+
+### PEP 8
+
+All Python project files underwent thorough testing using the CI Python Linter, which is available at <https://pep8ci.herokuapp.com/> This tool was utilized to ensure that all code adheres to PEP 8 standards, maintaining consistency, readability, and best practices across the project. The automated linting process helped identify and rectify any formatting issues, ensuring that the codebase meets high-quality standards.
+
+Files checked:
+```
+app.py
+app_pages/correlation_analysis.py
+app_pages/ml_price_prediction.py
+app_pages/multipage.py
+app_pages/page_summary.py
+app_pages/project_hypothesis.py
+app_pages/sales_price_prediction.py
+src/data_management.py
+src/machine_learning/evaluate_reg.py
+src/machine_learning/predictive_analysis_functions.py
+```
 
 ## Deployment
 
