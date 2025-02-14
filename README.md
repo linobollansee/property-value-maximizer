@@ -594,6 +594,8 @@ warnings.filterwarnings("ignore")
 os.environ["PYTHONWARNINGS"] = "ignore"
 ```
 
+When my Render deployment stopped working, I discovered I had exceeded my 500 Free Pipeline Minutes. I bought 1000 extra minutes to make sure deployment would continue functioning as normal.
+
 ## Project Testing
 
 ### User Story Testing
