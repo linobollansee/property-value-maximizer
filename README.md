@@ -576,77 +576,21 @@ os.environ["PYTHONWARNINGS"] = "ignore"
 
 #### User Story Testing
 
-- User Story 1.1: Install Required Dependencies and Packages - Business Requirement 1 & 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| Verify installation of Python Dependancies and Packages | Type `pip list` in the terminal | All installed packages are displayed in the terminal | PASSED |
-
-- User Story 1.2: Import Relevant Data into Jupyter Notebook - Business Requirement 1 & 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| Verify importation of Relevant Data into Jupyter Notebook | The `df.info()` method can verify the content of the imported data | Provides a summary of the DataFrame's structure | PASSED |
-
-User Story 2.1: Data Cleaning and Quality Assurance - Business Requirement 1
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| Verify Data Cleaning | The expression `.isnull().sum()` is used to check for missing (null) values after Data Cleaning | No missing values | PASSED |
-
-User Story 3.1: Model Performance Evaluation - Business Requirement 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| Evaluate Model Performance | Key metrics were evaluated using expressions such as: `print('R2 Score:', round(r2_score(y, prediction), 3))` etc. | An R2 score of at least 0.75 on the train set and test set was measured | PASSED |
-
-User Story 4.1: Streamlit Landing Page Access - Business Requirement 1 & 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| Access the Streamlit Landing Page | Type `streamlit run app.py` in the terminal and click Open in Browser | Landing Page opens | PASSED |
-
-User Story 4.2: Data Visualization for Insights - Business Requirement 1
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| --- | --- | --- | --- |
-
-User Story 4.3: Correlation Analysis View - Business Requirement 1
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| --- | --- | --- | --- |
-
-User Story 4.4: Key Features for Sale Price Prediction - Business Requirement 1
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| --- | --- | --- | --- |
-
-User Story 4.5: Interactive Prediction Input - Business Requirement 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| --- | --- | --- | --- |
-
-User Story 4.6: Accurate Sale Price Prediction - Business Requirement 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| --- | --- | --- | --- |
-
-User Story 4.7: Predictive Model Dashboard - Business Requirement 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| --- | --- | --- | --- |
-
-User Story 5.1: Early Deployment on Render - Business Requirement 1 & 2
-
-| Test | Action | Expected Result | Result |
-| --- | --- | --- | --- |
-| --- | --- | --- | --- |
+| User Story | Action | Expected Result | Result |
+|---|---|---|---|
+| 1.1 | Run `pip install -r requirements.txt` and verify with `pip list` | Dependencies are installed and listed correctly | Successful |
+| 1.2 | Run `pd.read_csv('data.csv')` in Jupyter | Dataset loads without errors | Successful |
+| 2.1 | Run `df.isnull().sum()` and `ProfileReport(df)` | Missing values identified, profile report generated | Successful |
+| 3.1 | Train model and evaluate using `r2_score(y_test, y_pred)` | R2 score ≥ 0.75 for train/test sets | Successful |
+| 3.2 | Generate plots with `plt.scatter(y_test, y_pred)` | Actual vs Prediction plots displayed | Successful |
+| 4.1 | Open Streamlit app and navigate to home page | Project overview is displayed | Successful |
+| 4.2 | View visualizations in Streamlit | Data insights are correctly visualized | Successful |
+| 4.3 | Open correlation analysis page in Streamlit | Interactive heatmap is displayed | Successful |
+| 4.4 | Run `df.corr(method='pearson')` and `df.corr(method='spearman')` | Key features for sale price identified | Successful |
+| 4.5 | Enter data in Streamlit input fields | Inputs are validated and accepted | Successful |
+| 4.6 | Predict house prices using model | Accurate predictions are displayed | Successful |
+| 4.7 | Open predictive model dashboard in Streamlit | Model results are visualized correctly | Successful |
+| 5.1 | Deploy app on Render and check live URL | Application deploys and runs correctly | Successful |
 
 - Widget Input Testing
 
