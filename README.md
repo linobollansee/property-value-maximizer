@@ -429,9 +429,12 @@ Categorical encoding was applied to convert ordinal categories into numerical va
     - 🔮 Sale Price Prediction
     - 🔬 Hypothesis Validation
     - 🤖 Machine Learning Model
-  - Business requirements covered: 
-    - BR1 - The client wants to understand how various house attributes correlate with the sale price in Ames, Iowa. She expects data visualizations that illustrate the relationships between these variables and the sale price.
-    - BR2 - The client is looking to predict the sale price for her four inherited houses, as well as for any other property in Ames, Iowa.
+
+Business requirements covered:
+
+- BR1 - The client wants to understand how various house attributes correlate with the sale price in Ames, Iowa. She expects data visualizations that illustrate the relationships between these variables and the sale price.
+
+- BR2 - The client is looking to predict the sale price for her four inherited houses, as well as for any other property in Ames, Iowa.
 
 ![streamlit-sidebar-readme.png](docs/readme-images/streamlit-sidebar-readme.png)
 
@@ -442,6 +445,12 @@ Categorical encoding was applied to convert ordinal categories into numerical va
   - Project Dataset: Provides details about the data source, size, and attributes used for analysis.
   - Business Requirements: Outlines the goals of analyzing house characteristics and developing a predictive pricing model.
   - Additional Information: Refers to further details available in a README file.
+  
+Business requirements covered:
+
+- BR1 - The client wants to understand how various house attributes correlate with the sale price in Ames, Iowa. She expects data visualizations that illustrate the relationships between these variables and the sale price.
+
+- BR2 - The client is looking to predict the sale price for her four inherited houses, as well as for any other property in Ames, Iowa.
 
 ![project-overview-readme](docs/readme-images/project-overview-readme.png)
 
@@ -457,6 +466,10 @@ Categorical encoding was applied to convert ordinal categories into numerical va
     - Show Correlations and PPS Heatmaps: If this box is checked, it loads three  interactive plotly heatmaps, two featuring spearman and pearson correlation heatmaps, and one featuring a predictive power score heatmap.
     - Variables Plots - Visual Analysis: If this box is checked, it loads eight interactive plotly scatter plots, 1stFlrSF, GarageArea, GarageYrBlt, GrLivArea, OverallQual, TotalBsmtSF, YearBuilt, YearRemodAdd, all individually plotted versus the SalePrice.
 
+Business requirements covered:
+
+- BR1 - The client wants to understand how various house attributes correlate with the sale price in Ames, Iowa. She expects data visualizations that illustrate the relationships between these variables and the sale price.
+
 ![correlation-analysis-readme](docs/readme-images/correlation-analysis-readme.png)
 
 ### Sale Price Prediction page
@@ -467,6 +480,10 @@ Categorical encoding was applied to convert ordinal categories into numerical va
   - A Total Predicted Sale Price for All Inherited Houses is displayed: 💲632,680.27 and it has commas as thousands separators, and rounding to 2 decimal places to represent cents.   
   - Predict Sales Price for Your Own House can be set with 5 number input widgets and calculated with a Calculate House price widget button.
   - A "SUCCESSFULLY CALCULATED" message appears along with the Price for Your Own House, which depends on input values.
+
+Business requirements covered:
+
+- BR2 - The client is looking to predict the sale price for her four inherited houses, as well as for any other property in Ames, Iowa.
 
 ![sale-price-prediction-readme](docs/readme-images/sale-price-prediction-readme.png)
 
@@ -480,6 +497,10 @@ Categorical encoding was applied to convert ordinal categories into numerical va
 
 - Hypothesis Validation page
 ![hypothesis-validation-readme](docs/readme-images/hypothesis-validation-readme.png)
+
+Business requirements covered:
+
+- BR1 - The client wants to understand how various house attributes correlate with the sale price in Ames, Iowa. She expects data visualizations that illustrate the relationships between these variables and the sale price.
 
 ### Machine Learning Model page
 
@@ -499,6 +520,10 @@ Categorical encoding was applied to convert ordinal categories into numerical va
   - Explained Variance Score (EVS): Measures how much of the variance in the data is explained by the model. Closer to 1 is better.
   - Median Absolute Error (MedAE): The median of absolute errors. Robust to outliers, and smaller values are better.
   - The regression performance plots show that the model effectively predicts sale prices, although its reliability decreases for higher-priced houses.
+
+Business requirements covered:
+
+- BR2 - The client is looking to predict the sale price for her four inherited houses, as well as for any other property in Ames, Iowa.
 
 - Machine Learning Model page
 ![machine-learning-model-readme](docs/readme-images/machine-learning-model-readme.png)
