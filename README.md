@@ -84,7 +84,9 @@ The project is accessible at the following URL: <https://property-value-maximize
 ## Terminology
 
 **Sale Price** is the current market value of a house, based on its characteristics and features.
-**Inherited House** is a property that the client has inherited and requires an assessment of its market value.**
+
+**Inherited House** is a property that the client has inherited and requires an assessment of its market value.
+
 **Summed Price** is the total of the predicted market prices for all four houses inherited by the client.
 
 ## Business Requirements
