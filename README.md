@@ -8,6 +8,7 @@ The project is accessible at the following URL: <https://property-value-maximize
 
 # Table of Contents
 - [Dataset Content](#dataset-content)
+- [Terminology](#terminology)
 - [Business Requirements](#business-requirements)
 - [Agile Methodology](#agile-methodology)
   - [Epics](#epics)
@@ -79,6 +80,12 @@ The project is accessible at the following URL: <https://property-value-maximize
 |YearBuilt|Original construction date|1872 - 2010|
 |YearRemodAdd|Remodel date (same as construction date if no remodelling or additions)|1950 - 2010|
 |SalePrice|Sale Price|34900 - 755000|
+
+## Terminology
+
+**Sale Price** is the current market value of a house, based on its characteristics and features.
+**Inherited House** is a property that the client has inherited and requires an assessment of its market value.**
+**Summed Price** is the total of the predicted market prices for all four houses inherited by the client.
 
 ## Business Requirements
 
