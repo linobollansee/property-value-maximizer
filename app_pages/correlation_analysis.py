@@ -65,6 +65,12 @@ def correlation_analysis_body():
 
     # Display histogram of the target variable's distribution
     if st.checkbox("⚖️ Distribution of Target Variable"):
+        st.write("The minimum value is 34.9k, which is also the lowest fence. "
+                 "The first quartile (Q1) is 129.95k. "
+                 "The median is 163k. "
+                 "The third quartile (Q3) is 214k. "
+                 "The upper fence is 340k. "
+                 "The maximum value is 755k. ")
         plot_target_hist(df_eda, target_var)
 
     # Display correlation and PPS (Predictive Power Score) heatmaps
