@@ -133,15 +133,15 @@ def plot_target_hist(df, target_var):
     st.plotly_chart(fig)
 
 
-def heatmap_corr(df, threshold, figsize=(20, 12), font_annot=8):
+def heatmap_corr(df, threshold, title, figsize=(20, 12), font_annot=8):
     """
     Function to generate a correlation heatmap for numerical features in the
-    DataFrame.
-    Values below the specified threshold are hidden in the plot.
+    DataFrame. Values below the specified threshold are hidden in the plot.
 
     Args:
         df: DataFrame containing the correlation matrix.
         threshold: Correlation value below which cells will be hidden.
+        title: Title for the heatmap (e.g., Pearson or Spearman).
         figsize: Optional tuple to set the size of the heatmap.
         font_annot: Optional font size for annotations in the heatmap.
     """
@@ -158,7 +158,7 @@ def heatmap_corr(df, threshold, figsize=(20, 12), font_annot=8):
         # Plot heatmap using Plotly
         fig = px.imshow(
             df_masked,
-            title="Correlation Heatmap",
+            title=title,
             color_continuous_scale='viridis',
             labels={'x': 'Features', 'y': 'Features'},
             text_auto=True
@@ -243,11 +243,17 @@ def DisplayCorrAndPPS(df_corr_pearson, df_corr_spearman, pps_matrix,
         figsize: Optional tuple for setting the size of the heatmaps.
         font_annot: Optional font size for annotations in the heatmap.
     """
-    # Display Spearman and Pearson correlation heatmaps
-    heatmap_corr(df=df_corr_spearman, threshold=CorrThreshold, figsize=figsize,
+    # Display Spearman correlation heatmap
+    heatmap_corr(df=df_corr_spearman, threshold=CorrThreshold,
+                 title="Spearman Correlation Heatmap", figsize=figsize,
                  font_annot=font_annot)
-    heatmap_corr(df=df_corr_pearson, threshold=CorrThreshold, figsize=figsize,
-                 font_annot=font_annot)
+
+    # Display Pearson correlation heatmap
+    heatmap_corr(df=df_corr_pearson, threshold=CorrThreshold,
+                 title="Pearson Correlation Heatmap", figsize=figsize,
+                       font_annot=font_annot)
+
     # Display PPS heatmap
     heatmap_pps(df=pps_matrix, threshold=PPS_Threshold, figsize=figsize,
                 font_annot=font_annot)
+
