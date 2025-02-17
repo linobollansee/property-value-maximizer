@@ -321,7 +321,7 @@ In this section, we will outline the business case for the machine learning (ML)
 
     - **Approximating Sale Prices:** One approach would be for the client to manually draw inferences about the sale prices of the inherited houses by comparing them with houses of similar features in the dataset. While this might offer a rough estimate, the approach is inherently subjective and lacks precision. It’s also prone to human error and biases.
   
-    - **Subjectivity and Inaccuracy:** Traditional methods, such as comparing houses in a simple spreadsheet or using basic statistical measures, may lead to inaccuracies due to the complexity of real estate pricing. Factors such as location, condition, and market trends might not be fully accounted for, leading to imprecise conclusions.
+    - **Subjectivity and Inaccuracy:** Traditional methods, such as comparing houses in a simple spreadsheet or using basic statistical measures, may lead to inaccuracies due to the complexity of real estate pricing. Factors such as overall quality, above-ground living area, garage area, the year the property was built, total basement area might not be fully accounted for, leading to imprecise conclusions.
 
     - Thus, using an ML model is a far more reliable and accurate method for predicting house prices based on multiple variables.
 
