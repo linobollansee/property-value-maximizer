@@ -307,113 +307,80 @@ To meet these business requirements, Epics and User Stories have been defined. T
   
 ## ML Business Case
 
-1. Identifying Correlations Between House Attributes and Sale Price
+In this section, we will outline the business case for the machine learning (ML) model, focusing on the project goals, requirements, and methodologies that align with the client’s needs. We will expand on key aspects such as business requirements, the feasibility of using traditional analysis, and the project’s inputs and outputs.
 
-Business Case: The client wants to understand how different house attributes correlate with sale prices to maximize returns on inherited properties.
+- Business Requirements
 
-Learning Method: Exploratory Data Analysis (EDA) and Feature Importance Analysis.
+  - **BR1**: The client wants to understand how various house attributes correlate with the sale price in Ames, Iowa. She expects data visualizations that illustrate the relationships between these variables and the sale price.
+  
+  - **BR2**: The client is looking to predict the sale price for her four inherited houses, as well as for any other property in Ames, Iowa.
 
-Ideal Outcome: A ranked list of features most correlated with house prices, represented in visualizations.
+- Can Traditional Data Analysis Be Used?
 
-Success/Failure Metrics:
+  - Traditional data analysis methods could offer some insights, but they would have limitations:
 
-Success: Identifying key attributes that influence sale price with statistical significance.
+    - **Approximating Sale Prices:** One approach would be for the client to manually draw inferences about the sale prices of the inherited houses by comparing them with houses of similar features in the dataset. While this might offer a rough estimate, the approach is inherently subjective and lacks precision. It’s also prone to human error and biases.
+  
+    - **Subjectivity and Inaccuracy:** Traditional methods, such as comparing houses in a simple spreadsheet or using basic statistical measures, may lead to inaccuracies due to the complexity of real estate pricing. Factors such as location, condition, and market trends might not be fully accounted for, leading to imprecise conclusions.
 
-Failure: Inconclusive correlations or misleading results due to multicollinearity.
+    - Thus, using an ML model is a far more reliable and accurate method for predicting house prices based on multiple variables.
 
-Model Output and Relevance: Graphs, heatmaps, and correlation coefficients demonstrating relationships between attributes and prices.
+- Does the Customer Need a Dashboard or API?
 
-Heuristics & Training Data: Historical house sale data from Ames, Iowa, with engineered features for better interpretability.
+  - The client’s requirements lean toward having a **dashboard** for visualization and predictions:
 
-2. Predicting House Sale Prices (Regression Model)
+    - **Dashboard Needs:** The client does not require an API at this point, as their focus is on visualizing the data and receiving predictions for house prices. The dashboard will provide an interactive way to explore the data, view the correlation of house attributes with sale prices, and input attributes for new houses to receive predicted prices in real-time.
+    - **User Interaction:** A user-friendly dashboard allows the client to easily interact with the model and make predictions for various houses, ensuring that the solution is accessible to users without a technical background.
 
-Business Case: The client wants an accurate prediction model for house sale prices based on historical data.
+- A Successful Project Outcome
 
-Learning Method: Supervised learning using a regression model (e.g., Random Forest, Gradient Boosting, or Linear Regression).
+  - Success for this project is defined by the following objectives:
 
-Ideal Outcome: A model that predicts house prices with high accuracy and generalizability.
+    - **Accurate Correlation Insights:** The client will benefit from an analysis that highlights the most important variables affecting house sale prices. This insight is crucial for pricing strategy, allowing the client to better assess the value of their inherited properties.
+    - **Predictive Model Success:** The client will consider the project a success if the machine learning model accurately predicts house sale prices based on the attributes provided, especially for the four inherited houses. The key is to help the client **maximize the sale price** for these properties by providing reliable predictions.
 
-Success/Failure Metrics:
+- Ethical and Privacy Concerns
 
-Success: R² score of at least 0.75 on train and test sets.
+  - The dataset used for this analysis is **public**, meaning it has been made available by authorities for public use, and no personal or private information is involved. 
 
-Failure: Model overfits or underperforms (R² < 0.75).
+    - **No Privacy Issues:** Since the data does not contain sensitive or personally identifiable information (PII), there are no ethical or privacy concerns associated with the use of this dataset.
+    - **Public Data Sources:** As the dataset is openly available for anyone to access, the project operates transparently with no legal or ethical barriers.
 
-Model Output and Relevance: A predicted sale price for any given house based on its attributes.
+- EPICS and User Stories for Agile Implementation
 
-Heuristics & Training Data: The dataset contains housing features and sale prices; feature engineering includes handling missing values, normalizing skewed data, and encoding categorical variables.
+  - The project is structured using the **Agile methodology**, with clear **EPICS** and **user stories** that break the work into manageable chunks. EPICS refer to the large bodies of work, and user stories outline specific tasks. See the [Agile Methodology](#agile-methodology) section for more details.
 
-3. Predicting Prices for the Four Inherited Houses
+- Does the Data Suggest a Particular Model?
 
-Business Case: The client wants to estimate the total expected sale price for four inherited houses.
+  - Based on the nature of the task, where we are predicting a **continuous numeric value** (sale price), a **regression model** is most appropriate:
 
-Learning Method: Regression model trained on historical housing data.
+    - **Regression for Continuous Output:** Regression models are designed to predict continuous outcomes based on input features. For this case, the model will predict the sale price of a house based on its attributes.
 
-Ideal Outcome: An estimated sale price for each inherited house and their total combined value.
+- Project Inputs and Intended Outputs
 
-Success/Failure Metrics:
+  - **Model Inputs:**
+    - The model will take house attributes from the dataset. The features of these houses will be used to train the model and make predictions.
+  
+  - **Model Outputs:**
+    - The output of the model will be the **predicted sale price** of the house, represented in USD as a continuous numeric value.
+    - Additionally, the client will receive the sum of the predicted sale prices for all four inherited houses combined.
 
-Success: Individual and total price predictions within 25% of actual sale prices (if available later).
+  - **User Interaction:**
+    - The dashboard will allow users to input house attributes (`OverallQual`, `GrLivArea`, `GarageArea`, `YearBuilt`, `TotalBsmtSF`) through interactive widgets. In return, the dashboard will provide the user with an estimated sale price for any given house.
 
-Failure: Large prediction errors (>25% deviation from market prices).
+- What Does Success Look Like?
 
-Model Output and Relevance: Individual and total predicted sale prices for inherited properties.
+  - Success is measured based on the following criteria:
 
-Heuristics & Training Data: Dataset of house attributes and prices; similar house features in the dataset will be used to enhance prediction reliability.
+    - **R-squared Score (R²):** A key performance indicator for this project is an **R² score** of at least **0.75** on both the training and test sets. The R² score measures how well the model’s predictions align with actual values, with 1 being perfect and 0 indicating no correlation. A score of 0.75 or higher indicates that the model can reliably predict sale prices.
 
-4. Developing a Price Estimation Dashboard
+- How Will the Client Benefit?
 
-Business Case: The client requires a user-friendly dashboard for predicting house prices.
+  - The primary benefit to the client is the ability to:
 
-Learning Method: Machine learning integration into a web-based application.
-
-Ideal Outcome: A dashboard where users input house attributes and receive real-time estimated prices.
-
-Success/Failure Metrics:
-
-Success: User-friendly interface with accurate and fast price predictions.
-
-Failure: Inconsistent predictions or non-intuitive UI.
-
-Model Output and Relevance: A web interface displaying predicted house prices based on input attributes.
-
-Heuristics & Training Data: Trained regression model integrated into the dashboard for live price predictions.
-
-5. Model Optimization and Validation
-
-Business Case: Ensuring that the regression model performs optimally with minimized error rates.
-
-Learning Method: Hyperparameter tuning, cross-validation, and model comparison.
-
-Ideal Outcome: A model with the best combination of accuracy and generalizability.
-
-Success/Failure Metrics:
-
-Success: Model performance improvement after tuning (higher R², lower RMSE).
-
-Failure: No improvement or overfitting.
-
-Model Output and Relevance: A final, validated model with the best performance metrics.
-
-Heuristics & Training Data: Grid search, randomized search, and validation techniques applied to Ames housing dataset.
-
-6. Feature Engineering for Model Improvement
-
-Business Case: Enhancing model accuracy by engineering new predictive features.
-
-Learning Method: Domain knowledge application, transformation of variables, and dimensionality reduction.
-
-Ideal Outcome: Improved model performance and interpretability.
-
-Success/Failure Metrics:
-
-Success: Feature selection leads to improved accuracy (R² > 0.75).
-
-Failure: Engineered features degrade model performance or introduce bias.
-
-Model Output and Relevance: A refined dataset with the most informative features.
-
-Heuristics & Training Data: Feature selection using correlation analysis.
+    - **Maximize Sale Price:** By using the model’s predictions, the client can optimize the pricing of their inherited properties. The insights from the model will help them determine the most competitive pricing strategy based on market conditions and property features.
+    - **Efficient Decision-Making:** With accurate predictions, the client will make more informed decisions on how to price their houses and potentially increase their profitability. The interactive dashboard also empowers them with the tools to make these decisions in real-time.
+    - This project’s outcome will significantly enhance the client’s ability to assess and act on the sale prices of inherited houses.
 
 ## Cross-industry standard process for data mining
 
