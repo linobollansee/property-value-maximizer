@@ -307,68 +307,113 @@ To meet these business requirements, Epics and User Stories have been defined. T
   
 ## ML Business Case
 
-- **Business Requirements**
+1. Identifying Correlations Between House Attributes and Sale Price
 
-Business Requirement 1:
-The client wants to understand how different house attributes correlate with sale prices. They expect data visualizations that illustrate the relationships between key features and sale prices.
+Business Case: The client wants to understand how different house attributes correlate with sale prices to maximize returns on inherited properties.
 
-Business Requirement 2:
-The client wishes to predict the sale prices of four inherited houses. Additionally, they want to forecast the sale prices of other properties in Ames, Iowa.
+Learning Method: Exploratory Data Analysis (EDA) and Feature Importance Analysis.
 
-- **Objective**
+Ideal Outcome: A ranked list of features most correlated with house prices, represented in visualizations.
 
-We want an ML model to predict the sale prices of houses based on their various attributes, using publicly available data, specifically in Ames, Iowa.
+Success/Failure Metrics:
 
-- **Ideal Outcome**
+Success: Identifying key attributes that influence sale price with statistical significance.
 
-Our ideal outcome is to deliver an interactive dashboard that not only allows the client to visualize the correlation between house features and sale prices but also predicts the sale price for each house, including the inherited ones.
+Failure: Inconclusive correlations or misleading results due to multicollinearity.
 
-- **Success Metrics**
+Model Output and Relevance: Graphs, heatmaps, and correlation coefficients demonstrating relationships between attributes and prices.
 
-The model success metrics are:
-  - Achieving an **R² score** of at least 0.75 on both the training and test datasets, indicating that the model can reliably predict sale prices.
-  - Providing actionable insights through **clear visualizations** of the features most strongly correlated with the sale price.
+Heuristics & Training Data: Historical house sale data from Ames, Iowa, with engineered features for better interpretability.
 
-- **Model Output**
+2. Predicting House Sale Prices (Regression Model)
 
-The model output is the **predicted sale price** of a house, expressed in USD as a continuous numeric value.
+Business Case: The client wants an accurate prediction model for house sale prices based on historical data.
 
-- **Heuristics**
-  - **Property Size**: We hypothesize that larger properties tend to command higher absolute sale prices. Features like **1stFlrSF**, **GrLivArea**, **LotArea**, and **TotalBsmtSF** are expected to have a positive correlation with sale price, as larger homes typically offer more utility and are more attractive to buyers.
-  - **Overall Quality**: The overall quality of the house plays a significant role in its market value. Higher quality ratings such as **OverallQual** are expected to have a strong positive correlation with sale prices, as higher quality homes are more desirable due to better materials and craftsmanship.
-  - **Property Condition**: The condition of a house, including factors such as age and renovations, is expected to influence the sale price. We hypothesize that newer homes or those with recent updates, indicated by features like **YearBuilt** and **YearRemodAdd**, will have a higher market value. A good condition rating (**OverallCond**) should also correlate positively with higher sale prices.
+Learning Method: Supervised learning using a regression model (e.g., Random Forest, Gradient Boosting, or Linear Regression).
 
-- **Training Data**  
-  The training data will be:
-  - **Publicly available** dataset containing various house attributes and their corresponding sale prices in Ames, Iowa.
-  - The dataset will include variables such as:
-    - **1stFlrSF**: First floor square feet
-    - **2ndFlrSF**: Second-floor square feet
-    - **BedroomAbvGr**: Bedrooms above grade (does NOT include basement bedrooms)
-    - **BsmtExposure**: Refers to walkout or garden level walls
-    - **BsmtFinType1**: Rating of basement finished area
-    - **BsmtFinSF1**: Type 1 finished square feet
-    - **BsmtUnfSF**: Unfinished square feet of basement area
-    - **TotalBsmtSF**: Total square feet of basement area
-    - **GarageArea**: Size of garage in square feet
-    - **GarageFinish**: Interior finish of the garage
-    - **GarageYrBlt**: Year garage was built
-    - **GrLivArea**: Above grade (ground) living area square feet
-    - **KitchenQual**: Kitchen quality
-    - **LotArea**: Lot size in square feet
-    - **LotFrontage**: Linear feet of street connected to property
-    - **MasVnrArea**: Masonry veneer area in square feet
-    - **EnclosedPorch**: Enclosed porch area in square feet
-    - **OpenPorchSF**: Open porch area in square feet
-    - **OverallCond**: Rates the overall condition of the house
-    - **OverallQual**: Rates the overall material and finish of the house
-    - **WoodDeckSF**: Wood deck area in square feet
-    - **YearBuilt**: Original construction date
-    - **YearRemodAdd**: Remodel date (same as construction date if no remodeling or additions)
-    - **SalePrice**: Sale Price
+Ideal Outcome: A model that predicts house prices with high accuracy and generalizability.
 
-- **Benefits for the Client**  
-  This ML model will allow the client to confidently estimate the sale price of any house in Ames, especially their inherited properties, and make informed decisions to maximize their sale value.
+Success/Failure Metrics:
+
+Success: R² score of at least 0.75 on train and test sets.
+
+Failure: Model overfits or underperforms (R² < 0.75).
+
+Model Output and Relevance: A predicted sale price for any given house based on its attributes.
+
+Heuristics & Training Data: The dataset contains housing features and sale prices; feature engineering includes handling missing values, normalizing skewed data, and encoding categorical variables.
+
+3. Predicting Prices for the Four Inherited Houses
+
+Business Case: The client wants to estimate the total expected sale price for four inherited houses.
+
+Learning Method: Regression model trained on historical housing data.
+
+Ideal Outcome: An estimated sale price for each inherited house and their total combined value.
+
+Success/Failure Metrics:
+
+Success: Individual and total price predictions within 25% of actual sale prices (if available later).
+
+Failure: Large prediction errors (>25% deviation from market prices).
+
+Model Output and Relevance: Individual and total predicted sale prices for inherited properties.
+
+Heuristics & Training Data: Dataset of house attributes and prices; similar house features in the dataset will be used to enhance prediction reliability.
+
+4. Developing a Price Estimation Dashboard
+
+Business Case: The client requires a user-friendly dashboard for predicting house prices.
+
+Learning Method: Machine learning integration into a web-based application.
+
+Ideal Outcome: A dashboard where users input house attributes and receive real-time estimated prices.
+
+Success/Failure Metrics:
+
+Success: User-friendly interface with accurate and fast price predictions.
+
+Failure: Inconsistent predictions or non-intuitive UI.
+
+Model Output and Relevance: A web interface displaying predicted house prices based on input attributes.
+
+Heuristics & Training Data: Trained regression model integrated into the dashboard for live price predictions.
+
+5. Model Optimization and Validation
+
+Business Case: Ensuring that the regression model performs optimally with minimized error rates.
+
+Learning Method: Hyperparameter tuning, cross-validation, and model comparison.
+
+Ideal Outcome: A model with the best combination of accuracy and generalizability.
+
+Success/Failure Metrics:
+
+Success: Model performance improvement after tuning (higher R², lower RMSE).
+
+Failure: No improvement or overfitting.
+
+Model Output and Relevance: A final, validated model with the best performance metrics.
+
+Heuristics & Training Data: Grid search, randomized search, and validation techniques applied to Ames housing dataset.
+
+6. Feature Engineering for Model Improvement
+
+Business Case: Enhancing model accuracy by engineering new predictive features.
+
+Learning Method: Domain knowledge application, transformation of variables, and dimensionality reduction.
+
+Ideal Outcome: Improved model performance and interpretability.
+
+Success/Failure Metrics:
+
+Success: Feature selection leads to improved accuracy (R² > 0.75).
+
+Failure: Engineered features degrade model performance or introduce bias.
+
+Model Output and Relevance: A refined dataset with the most informative features.
+
+Heuristics & Training Data: Feature selection using correlation analysis.
 
 ## Cross-industry standard process for data mining
 
