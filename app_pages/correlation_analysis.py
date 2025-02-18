@@ -188,7 +188,7 @@ def heatmap_pps(df, threshold, figsize=(20, 12), font_annot=8):
         # Plot heatmap using Plotly
         fig = px.imshow(
             df_masked,
-            title="PPS Heatmap",
+            title="Predictive Power Score Heatmap",
             color_continuous_scale='viridis',
             labels={'x': 'Features', 'y': 'Features'},
             text_auto=True
@@ -243,15 +243,15 @@ def DisplayCorrAndPPS(df_corr_pearson, df_corr_spearman, pps_matrix,
         figsize: Optional tuple for setting the size of the heatmaps.
         font_annot: Optional font size for annotations in the heatmap.
     """
-    # Display Spearman correlation heatmap
-    heatmap_corr(df=df_corr_spearman, threshold=CorrThreshold,
-                 title="Spearman Correlation Heatmap", figsize=figsize,
-                 font_annot=font_annot)
-
     # Display Pearson correlation heatmap
     heatmap_corr(df=df_corr_pearson, threshold=CorrThreshold,
                  title="Pearson Correlation Heatmap", figsize=figsize,
                        font_annot=font_annot)
+
+    # Display Spearman correlation heatmap
+    heatmap_corr(df=df_corr_spearman, threshold=CorrThreshold,
+                 title="Spearman Correlation Heatmap", figsize=figsize,
+                 font_annot=font_annot)
 
     # Display PPS heatmap
     heatmap_pps(df=pps_matrix, threshold=PPS_Threshold, figsize=figsize,
